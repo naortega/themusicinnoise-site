@@ -25,9 +25,10 @@
  * For more information, please refer to <http://unlicense.org/>
  */
 
-body {
+* {
 	background-color: #fdf6e3;
 	color: #45575C;
+	font-family: serif;
 }
 
 #main-table {
