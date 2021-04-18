@@ -58,6 +58,19 @@ ul {
 	margin-top: 5px;
 }
 
+ol.refs {
+	padding-left: 5px;
+}
+
+ol.refs li {
+	list-style-type: none;
+	counter-increment: step_counter;
+}
+
+ol.refs li:before {
+	content: "[" counter(step_counter) "] ";
+}
+
 p {
 	font-size: 16px;
 	line-height: 24px;
@@ -88,6 +101,10 @@ h3, h4 {
 
 .track-list td {
 	padding: 1px 10px;
+}
+
+code {
+	font-family: monospace;
 }
 
 footer {
