@@ -94,6 +94,11 @@ a:visited {
 	color: #9B225D;
 }
 
+sup {
+	font-size: 12px;
+	line-height: 80%;
+}
+
 h3, h4 {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
