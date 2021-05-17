@@ -99,16 +99,16 @@ sup {
 	line-height: 80%;
 }
 
+.page-title {
+	text-align: center;
+}
+
 h3, h4 {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
 }
 
-#page-title {
-	text-align: center;
-}
-
-#album-cover {
+.album-cover {
 	width: 300px;
 	display: block;
 	margin: 0 auto;
