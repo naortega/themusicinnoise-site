@@ -99,6 +99,10 @@ sup {
 	line-height: 80%;
 }
 
+figure img {
+	width: 100%;
+}
+
 .page-title {
 	text-align: center;
 }
