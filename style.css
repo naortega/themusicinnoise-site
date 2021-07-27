@@ -77,7 +77,7 @@ ol.refs li {
 	counter-increment: step_counter;
 }
 
-ol.refs li:before {
+ol.refs > li:before {
 	content: "[" counter(step_counter) "] ";
 }
 
