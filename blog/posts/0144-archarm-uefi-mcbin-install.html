@@ -1,0 +1,167 @@
+<p>So I've decided to write this little guide because of how much I've suffered
+to get this to work, and how absolutely broken the MACCHAITObin documentation
+is. Actually, just their website in general is broken. Marvell, please get your
+act together with your website. It's not as if you're modifying it all that
+often, so stop breaking things.</p>
+
+<p>With that out of the way, let's get to business.</p>
+
+<h3>Requirements</h3>
+<p>Aside from the MACCHIATObin itself (which I believe should be fairly
+obvious), you're also going to want the following:</p>
+
+<ul>
+	<li>Another computer (preferably a laptop) to do most of the setup on</li>
+	<li>USB to micro-USB cable (for serial USB connection)</li>
+	<li>A graphics card (I'm using the NVidia GT 710)</li>
+	<li>A USB storage device</li>
+	<li>A SD card</li>
+	<li>A monitor (and whatever cable connects with your graphics card)</li>
+	<li>A USB keyboard</li>
+	<li>An ethernet cable</li>
+	<li>12V power cable</li>
+	<li>ATX power supply</li>
+</ul>
+
+<h3>Prepare ArchLinuxARM U-Boot SD Card</h3>
+<p>It's very possible you'll run into issues later when installing UEFI onto the
+SPI, so it's good to have an SD card that you can boot from, so as to have
+access to a prompt. For this, I suggest going through the entire U-Boot install
+instructions provided by ArchLinuxARM.<sup><a href="#r1" >[1]</a></sup> I also
+suggest paying attention to the DIP switch or jumper settings, and pay attention
+to which are for SD card and SPI boot. This should appear on the board, and in
+the ArchLinuxARM documentation it shows the settings for SD card boot, but I'll
+repeat both here:</p>
+
+<table>
+	<thead>
+		<tr>
+			<th></th>
+			<th colspan="6">Switches/Jumpers</th>
+		</tr>
+		<tr>
+			<th>Boot Type</th>
+			<th>1</th>
+			<th>2</th>
+			<th>3</th>
+			<th>4</th>
+			<th>5</th>
+			<th>6</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>SD Card</td>
+			<td>OFF</td>
+			<td>ON</td>
+			<td>ON</td>
+			<td>ON</td>
+			<td>OFF</td>
+			<td>ON</td>
+		</tr>
+		<tr>
+			<td>SPI</td>
+			<td>OFF</td>
+			<td>OFF</td>
+			<td>OFF</td>
+			<td>ON</td>
+			<td>ON</td>
+			<td>OFF</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>Use this as a guide for whenever I refer to booting from SD card or from the
+SPI.</p>
+
+<h3>Install UEFI on SPI</h3>
+<p>The documentation for this can properly be found on the Solid Run Developer
+Center<sup><a href="#r2" >[2]</a></sup>, but I'll be repeating here, mostly
+because I've had issues with a few of the options.</p>
+
+<p>Firstly, regarding the different options for obtaining a flash image, I'll
+just say that I've tried the docker image, and I've tried compiling natively on
+the MACCHIATObin, but both of these ran into issues. The docker image ran into a
+syntax error<sup><a href="#r3" >[3]</a></sup> and the native build had some
+issues when running Python tests, namely with
+<code>codec.lookup('ucs-2')</code>, saying it couldn't find the codec.
+Ultimately both errors are Python problems. Coincidence? I think not! But I'll
+forget about my disliking of Python for now and get on with this guide.</p>
+
+<p>So really, the best option is to use the pre-built binary, which is SPI
+specific.<sup><a href="#r4" >[4]</a></sup> Once you have this, you're gonna want
+to save it to the USB storage device using a FAT32 formatted partition. If
+you're reading this sort of guide you should already know how to format a USB
+storage device, but I'll remind you that you don't only have to format the
+partition with <code>mkfs.vfat -F 32 &lt;partition&gt;</code>, but you actually
+also have to set the partition type to FAT32. I say this because I forgot to do
+this, and waste some time on it.</p>
+
+<p>Once you have this done, copy the image binary onto the newly formatted
+storage device. You can either keep the name of <code>uefi-mcbin-spi.bin</code>
+or you can change it to <code>flash-image.bin</code>, which is the filename used
+in the Solid Run documentation for flashing to SPI from U-Boot. Your choice,
+just make sure to take it into consideration. I'll use
+<code>uefi-mcbin-spi.bin</code> since that's what I used anyways.</p>
+
+<p>Now that this is done, it's time to flash the image to the SPI. To do this,
+insert the USB storage device into the USB 3.0 slot on the MACCHIATObin, and
+insert the SD card with ArchLinuxARM (and U-Boot) into the SD card slot. Set the
+jumpers to boot from the SD card. Connect to the MACCHIATObin via serial USB.
+Finally, boot the machine and make sure to interrupt the boot process (when
+prompted) to enter the U-Boot console. From here, we'll be running the
+instructions for installing an image to the SPI Flash via U-Boot found in the
+documentation,<sup><a href="#r5" >[5]</a></sup> modifying, of course, for the
+filename:</p>
+
+<ul class="code" >
+	<li>usb start</li>
+	<li>load usb 0:1 $kernel_addr_r uefi-mcbin-spi.bin</li>
+	<li>sf probe</li>
+	<li>sf write $kernel_addr_r 0 0x$filesize</li>
+</ul>
+
+<p>To test to see if this has worked, turn off the MACCHIATObin, switch the
+jumpers to boot from SPI, and check to see if you get a UEFI prompt. This should
+appear not only if you start up in a serial console, but also on a screen if you
+have everything hooked up with the graphics card. If you do see a prompt, then
+all has worked as expected. If you don't, try doing this process a few more
+times. It gave me some weird errors the first few times I tried, and then
+magically it started working after what must've been the third time.</p>
+
+<h3>Installing ArchLinuxARM</h3>
+
+<h3>References</h3>
+<ol class="refs" >
+	<li id="r1" >
+		<a href="https://archlinuxarm.org/platforms/armv8/marvell/macchiatobin"
+		   target="_blank" >
+		   MACCHIATObin - Arch Linux ARM
+		</a>
+	</li>
+	<li id="r2" >
+		<a href="https://developer.solid-run.com/knowledge-base/armada-8040-uefi/"
+		   target="_blank" >
+		   Armada 8040 UEFI - Solid Run
+		</a>
+	</li>
+	<li id="r3" >
+		<a href="https://github.com/Josua-SR/boot-builder/issues/1"
+		   target="_blank" >
+		   Syntax Error when Fetching Sources for UEFI Build - Issue #1 -
+		   Josua-SR/boot-builder - GitHub
+		</a>
+	</li>
+	<li id="r4" >
+		<a href="https://images.solid-run.com/8040/UEFI"
+		   target="_blank" >
+		   SolidRun Images: 8040/UEFI
+		</a>
+	</li>
+	<li id="r5" >
+		<a href="https://developer.solid-run.com/knowledge-base/armada-8040-machiatobin-u-boot-and-atf/#to-spi-flash"
+		   target="_blank" >
+		   Armada 8040 U-Boot and ATF: to SPI Flash - Solid Run
+		</a>
+	</li>
+</ol>
