@@ -1,5 +1,5 @@
 <p>So I've decided to write this little guide because of how much I've suffered
-to get this to work, and how absolutely broken the MACCHAITObin documentation
+to get this to work, and how absolutely broken the MACCHIATObin documentation
 is. Actually, just their website in general is broken. Marvell, please get your
 act together with your website. It's not as if you're modifying it all that
 often, so stop breaking things.</p>
@@ -11,16 +11,16 @@ often, so stop breaking things.</p>
 obvious), you're also going to want the following:</p>
 
 <ul>
-	<li>Another computer (preferably a laptop) to do most of the setup on</li>
-	<li>USB to micro-USB cable (for serial USB connection)</li>
-	<li>A graphics card (I'm using the NVidia GT 710)</li>
-	<li>A USB storage device</li>
-	<li>A SD card</li>
-	<li>A monitor (and whatever cable connects with your graphics card)</li>
-	<li>A USB keyboard</li>
-	<li>An ethernet cable</li>
-	<li>12V power cable</li>
+	<li>SD card (maybe a few)</li>
+	<li>USB storage device</li>
+	<li>USB to micro-USB cable</li>
+	<li>12V power supply</li>
 	<li>ATX power supply</li>
+	<li>Graphics card (I'm using the NVidia GT 710)</li>
+	<li>Hard drive</li>
+	<li>SATA cable</li>
+	<li>Monitor</li>
+	<li>USB keyboard</li>
 </ul>
 
 <h3>Prepare ArchLinuxARM U-Boot SD Card</h3>
@@ -94,8 +94,9 @@ to save it to the USB storage device using a FAT32 formatted partition. If
 you're reading this sort of guide you should already know how to format a USB
 storage device, but I'll remind you that you don't only have to format the
 partition with <code>mkfs.vfat -F 32 &lt;partition&gt;</code>, but you actually
-also have to set the partition type to FAT32. I say this because I forgot to do
-this, and waste some time on it.</p>
+also have to set the partition type to FAT32 when creating the partition with
+<code>fdisk</code> (or similar tools). I say this because I forgot to do this,
+and wasted some time here.</p>
 
 <p>Once you have this done, copy the image binary onto the newly formatted
 storage device. You can either keep the name of <code>uefi-mcbin-spi.bin</code>
@@ -130,6 +131,64 @@ times. It gave me some weird errors the first few times I tried, and then
 magically it started working after what must've been the third time.</p>
 
 <h3>Installing ArchLinuxARM</h3>
+<h4>Preparing the Installation Media</h4>
+<p>Since we're going for a desktop setup, the ideal is to install the entire OS
+onto a hard drive connected via one of the SATA ports. The issue here isn't so
+much the installation itself, but the live OS used to install it. The reason is
+that ArchLinuxARM does not currently provide images, much less images configured
+for UEFI boot. If the SD card we've used earlier provides access to an internet
+connection as well as to the hard drive you wish to install on, then use that.
+If not, you'll have to get a live image of some other distribution to boot from
+that supports UEFI and can access the hard drive. In my case, I used the Debian
+ARM64 image (<em>not netinst!</em>).<sup><a href="#r6" >[6]</a></sup> Since it
+is an installation media, I had to install it from a USB stick onto a SD card
+to finally work from the SD card to install ArchLinuxARM to the hard drive.</p>
+
+<p>Regardless of the image you choose to use, make sure you can install the Arch
+Install Scripts (usually <code>arch-install-scripts</code>), as it's going to
+make your life easier to use <code>genfstab</code> and
+<code>arch-chroot</code>.</p>
+
+<h4>Installation &amp; Configuration</h4>
+<p>If you're familiar with the installation process of normal ArchLinux (amd64)
+or some other more manual installation process, such as Gentoo, then from this
+point on everything should be quite familiar. First, partition the hard drive
+with the partitions you want and format them; then mount the partitions in the
+structure you want (e.g. home partition mounted as <code>/mnt/home</code>);
+finally we populate the filesystem with the files we want. Whereas the ArchLinux
+Installation Guide tells us to use <code>pacstrap</code>, it doesn't make much
+sense for us to use this. So instead, we'll be using the tarball provided by
+ArchLinuxARM for aarch64 platforms.<sup><a href="#r7" >[7]</a></sup> Simply
+extract the tarball over the mounted root directory to populate everything. This
+step replaces <code>pacstrap</code>. After this you can basically follow the
+ArchLinux Installation Guide<sup><a href="#r8" >[8]</a></sup> The only step that
+will be different is when we install our boot loader.</p>
+
+<h4>Installing the Boot Loader (GRUB)</h4>
+<p>This step has a small trick to it. The process is for the most part exactly
+the same as what is described in the instructions found on the
+ArchWiki,<sup><a href="#r9" >[9]</a></sup> with an extra step right before
+running the <code>grub-mkconfig</code> command.</p>
+
+<p>If you try running <code>grub-mkconfig</code>, you'll notice that it doesn't
+create any entries for the OS we've just installed. This is because the kernel
+in ArchLinuxARM uses the filename <code>Image</code>, which the image finder of
+<code>grub-mkconfig</code> doesn't recognize. As you can imagine, this can be
+solved by just making a simple symbolic link to the kernel file with a filename
+that is recognized. In my case, I simply created a link named
+<code>vmlinuz-linux</code> as appears on my x86_64 machine:</p>
+
+<ul class="code" >
+	<li>cd /boot/</li>
+	<li>ln -s Image vmlinuz-linux</li>
+</ul>
+
+<h3>Reboot</h3>
+<p>At this point, the OS should be properly installed, and you should be able to
+reboot the machine into ArchLinuxARM from UEFI on your MACCHIATObin. Do make
+sure to remove whatever live media you were using for the installation.</p>
+
+<p>Happy hacking!</p>
 
 <h3>References</h3>
 <ol class="refs" >
@@ -162,6 +221,30 @@ magically it started working after what must've been the third time.</p>
 		<a href="https://developer.solid-run.com/knowledge-base/armada-8040-machiatobin-u-boot-and-atf/#to-spi-flash"
 		   target="_blank" >
 		   Armada 8040 U-Boot and ATF: to SPI Flash - Solid Run
+		</a>
+	</li>
+	<li id="r6" >
+		<a href="https://cdimage.debian.org/debian-cd/current/arm64/iso-dvd/"
+		   target="_blank" >
+		   Index of /debian-cd/current/arm64/iso-dvd
+		</a>
+	</li>
+	<li id="r7" >
+		<a href="https://archlinuxarm.org/platforms/armv8/generic"
+		   target="_blank" >
+		   Generic AArch64 Installation
+		</a>
+	</li>
+	<li id="r8" >
+		<a href="https://wiki.archlinux.org/title/installation_guide"
+		   target="_blank" >
+		   Installation guide - ArchWiki
+		</a>
+	</li>
+	<li id="r9" >
+		<a href="https://wiki.archlinux.org/title/GRUB#UEFI_systems"
+		   target="_blank" >
+		   GRUB: UEFI systems - ArchWiki
 		</a>
 	</li>
 </ol>
