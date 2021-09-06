@@ -25,7 +25,7 @@
  * For more information, please refer to <http://unlicense.org/>
  */
 
-* {
+body {
 	background-color: #fdf6e3;
 	color: #45575C;
 	font-family: serif;
@@ -114,6 +114,19 @@ figure img {
 h3, h4 {
 	margin-bottom: 0px;
 	padding-bottom: 0px;
+}
+
+h5 {
+	margin-top: 3px;
+	margin-bottom: 3px;
+}
+
+div.card {
+	padding: 10px;
+	border-radius: 5px;
+	width: 30%;
+	word-wrap: break-word;
+	background-color: #eee8d5;
 }
 
 .album-cover {
