@@ -81,6 +81,19 @@ ol.refs > li:before {
 	content: "[" counter(step_counter) "] ";
 }
 
+ol.notes {
+	padding-left: 5px;
+}
+
+ol.notes li {
+	list-style-type: none;
+	counter-increment: note_counter;
+}
+
+ol.notes > li:before {
+	content: "(" counter(note_counter) ") ";
+}
+
 ol.roman-numerals {
 	list-style-type: upper-roman;
 }
