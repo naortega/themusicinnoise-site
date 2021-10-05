@@ -28,30 +28,92 @@
 body {
 	background-color: #fdf6e3;
 	color: #45575C;
-	font-family: serif;
 }
 
-body {
-	width: 50%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
-header {
+.site-title {
+	font-family: sans-serif;
+	font-size: 45px;
+	text-transform: uppercase;
 	text-align: center;
 }
 
 nav {
-	overflow: hidden;
+	font-family: sans-serif;
+	float: none;
+	width: 90%;
+	border-style: solid;
+	border-width: 0 0 5px 0;
+	padding-bottom: 15px;
+	margin: 0 auto 0 auto;
+}
+
+nav > ul {
+	padding-left: 10px;
+	list-style-type: none;
+	text-align: center;
+}
+
+nav > ul > li {
+	display: inline;
+	font-size: 28px;
+	margin: 10px;
 }
 
 nav a {
-	float: left;
-	display: block;
-	font-size: 18px;
-	padding: 4px 8px;
-	text-align: center;
 	text-decoration: none;
+}
+
+main {
+	float: none;
+	width: 90%;
+	margin: 0 auto 0 auto;
+	font-size: 18px;
+}
+
+main h1 {
+	font-size: 32px;
+}
+
+main h2 {
+	font-size: 26px;
+}
+
+main h3 {
+	font-size: 20px;
+}
+
+main p, main blockquote {
+	text-align: justify;
+	text-justify: inter-word;
+}
+
+header > h1 {
+	font-family: sans-serif;
+	font-size: 38px;
+	text-align: center;
+}
+
+header > h2 {
+	font-family: sans-serif;
+	font-size: 24px;
+	text-align: center;
+}
+
+img.profile {
+	width: 40%;
+	float: right;
+	border-radius: 15%;
+	margin: 10px;
+}
+
+code {
+	font-family: monospace;
+}
+
+footer {
+	text-align: center;
+	width: 100%;
+	float: right;
 }
 
 ul {
@@ -98,11 +160,6 @@ ol.roman-numerals {
 	list-style-type: upper-roman;
 }
 
-blockquote, p {
-	font-size: 16px;
-	line-height: 24px;
-}
-
 a {
 	color: #185885;
 }
@@ -124,22 +181,16 @@ figure img {
 	text-align: center;
 }
 
-h3, h4 {
-	margin-bottom: 0px;
-	padding-bottom: 0px;
-}
-
-h5 {
-	margin-top: 3px;
-	margin-bottom: 3px;
-}
-
 div.card {
 	padding: 10px;
 	border-radius: 5px;
 	width: 30%;
 	word-wrap: break-word;
 	background-color: #eee8d5;
+}
+
+div.card > h4 {
+	margin: 2px;
 }
 
 .album-cover {
@@ -152,14 +203,39 @@ div.card {
 	padding: 1px 10px;
 }
 
-code {
-	font-family: monospace;
-}
-
-footer {
-	text-align: center;
-}
-
-@media screen and (max-width: 800px) {
-	body { width: 100%; }
+@media (min-width: 1200px) {
+	.site-title {
+		text-align: left;
+	}
+	nav {
+		width: 20%;
+		height: 85%;
+		float: left;
+		margin: 15px;
+		padding: 0 15px 15px 15px;
+		border-style: solid;
+		border-width: 0 5px 0 0;
+		position: fixed;
+	}
+	nav > ul {
+		text-align: left;
+	}
+	nav > ul > li {
+		display: block;
+		font-size: 32px;
+		float: none;
+	}
+	main {
+		float: right;
+		width: 70%;
+		margin: 20px;
+		padding: 20px;
+	}
+	footer {
+		width: 75%;
+		float: right;
+	}
+	img.profile {
+		width: 35%;
+	}
 }
