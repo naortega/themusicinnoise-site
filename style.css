@@ -187,7 +187,7 @@ figcaption {
 	text-align: center;
 }
 
-div.card {
+div.crypto-card {
 	padding: 10px;
 	border-radius: 5px;
 	width: 30%;
@@ -195,14 +195,16 @@ div.card {
 	background-color: #eee8d5;
 }
 
-div.card > h4 {
+div.crypto-card > h3 {
 	margin: 2px;
 }
 
-.album-cover {
-	width: 300px;
+img.album-cover {
+	width: 40%;
+	/*float: right;*/
 	display: block;
 	margin: 0 auto;
+	border-radius: 15%;
 }
 
 .track-list td {
@@ -243,5 +245,9 @@ div.card > h4 {
 	}
 	img.profile {
 		width: 35%;
+	}
+	img.album-cover {
+		float: right;
+		margin: 15px;
 	}
 }
