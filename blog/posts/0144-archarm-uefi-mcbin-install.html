@@ -115,12 +115,12 @@ instructions for installing an image to the SPI Flash via U-Boot found in the
 documentation,<sup><a href="#r5" >[5]</a></sup> modifying, of course, for the
 filename:</p>
 
-<ul class="code" >
-	<li>usb start</li>
-	<li>load usb 0:1 $kernel_addr_r uefi-mcbin-spi.bin</li>
-	<li>sf probe</li>
-	<li>sf write $kernel_addr_r 0 0x$filesize</li>
-</ul>
+<code><pre>
+usb start
+load usb 0:1 $kernel_addr_r uefi-mcbin-spi.bin
+sf probe
+sf write $kernel_addr_r 0 0x$filesize
+</pre></code>
 
 <p>To test to see if this has worked, turn off the MACCHIATObin, switch the
 jumpers to boot from SPI, and check to see if you get a UEFI prompt. This should
@@ -181,10 +181,10 @@ solved by just making a simple symbolic link to the kernel file with a filename
 that is recognized. In my case, I simply created a link named
 <code>vmlinuz-linux</code> as appears on my x86_64 machine:</p>
 
-<ul class="code" >
-	<li>cd /boot/</li>
-	<li>ln -s Image vmlinuz-linux</li>
-</ul>
+<code><pre>
+cd /boot
+ln -s Image vmlinuz-linux
+</pre></code>
 
 <h3>Reboot</h3>
 <p>At this point, the OS should be properly installed, and you should be able to
