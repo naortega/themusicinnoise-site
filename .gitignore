@@ -1,2 +1,6 @@
 # ignore generated site
 output/
+
+# Ignore compiled files
+blog/templates/index.html/header.html
+blog/templates/index.html/footer.html
