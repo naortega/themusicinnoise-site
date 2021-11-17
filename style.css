@@ -140,6 +140,11 @@ img.album-cover {
 	border-radius: 15%;
 }
 
+.track-list th {
+	text-align: center;
+	padding: 1px 10px;
+}
+
 .track-list td {
 	padding: 1px 10px;
 }
