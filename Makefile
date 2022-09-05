@@ -3,7 +3,8 @@ OUTPUT_DIR=./output
 .PHONY: all pages blog sync clean
 
 all: pages blog
-	cp nicolas@ortegas.org_pub.asc style.css favicon.png profile.png $(OUTPUT_DIR)
+	cp -r static/* $(OUTPUT_DIR)
+	#cp nicolas@ortegas.org_pub.asc style.css favicon.png profile.png $(OUTPUT_DIR)
 
 pages:
 	mkdir -p $(OUTPUT_DIR)
