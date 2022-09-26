@@ -4,7 +4,6 @@ OUTPUT_DIR=./output
 
 all: pages blog
 	cp -r static/* $(OUTPUT_DIR)
-	#cp nicolas@ortegas.org_pub.asc style.css favicon.png profile.png $(OUTPUT_DIR)
 
 pages:
 	mkdir -p $(OUTPUT_DIR)
