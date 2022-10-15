@@ -1,6 +1,7 @@
 OUTPUT_DIR=./output
+WEB_ROOT=/var/www/themusicinnoise.net/main
 
-.PHONY: all pages blog sync clean
+.PHONY: all pages blog sync clean install
 
 all: pages blog
 	cp -r static/* $(OUTPUT_DIR)
@@ -23,3 +24,7 @@ clean:
 	rm -rf $(OUTPUT_DIR)
 	rm -f blog/templates/index.html/header.html
 	rm -f blog/templates/index.html/footer.html
+
+install: all
+	mkdir -p 
+	cp -r $(OUTPUT_DIR)/* $(WEB_ROOT)/
