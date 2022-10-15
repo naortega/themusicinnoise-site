@@ -1,7 +1,7 @@
 OUTPUT_DIR=./output
 WEB_ROOT=/var/www/themusicinnoise.net/main
 
-.PHONY: all pages blog sync clean install
+.PHONY: all pages blog clean install
 
 all: pages blog
 	cp -r static/* $(OUTPUT_DIR)
@@ -16,9 +16,6 @@ blog:
 	sed -i -e 's/\$${title}/Blog/' blog/templates/index.html/header.html
 	cat blog/templates/index.html/footer-part.html templates/page/footer.html > blog/templates/index.html/footer.html
 	find blog/posts -type f -name '*.cfg' -print0 | sort -zr | xargs -0 saait -o $(OUTPUT_DIR)/blog/ -t blog/templates/
-
-sync: all
-	rsync -avz --delete $(OUTPUT_DIR)/ nicolas@192.168.1.141::tmin-site
 
 clean:
 	rm -rf $(OUTPUT_DIR)
