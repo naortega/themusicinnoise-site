@@ -23,5 +23,5 @@ clean:
 	rm -f blog/templates/index.html/footer.html
 
 install: all
-	mkdir -p 
+	mkdir -p $(WEB_ROOT)
 	cp -r $(OUTPUT_DIR)/* $(WEB_ROOT)/
