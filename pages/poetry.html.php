@@ -1,3 +1,11 @@
+<?php
+$title = "Poetry";
+$description = "A collection of some of my poems.";
+$keywords = "poetry, religion, catholicism";
+
+require "config.php";
+require "templates/header.php";
+?>
 <p>I'm not truly super into writing poetry, or reading it for that
 matter, but every now and then I do like to read certain special poems,
 and even write some poetry of my own. That being said, it's truly not
@@ -81,3 +89,7 @@ pensando en su salvación.</p>
 
 <p>Aun no es suficiente,<br />
 pero es mi aportación.</p>
+
+<?php
+require "templates/footer.php"
+?>

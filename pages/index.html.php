@@ -1,3 +1,9 @@
+<?php
+$title = "Home Page";
+
+require "config.php";
+require "templates/header.php";
+?>
 <img
 		src="/imgs/profile.png"
 		alt="Profile picture."
@@ -35,3 +41,7 @@ then I'm glad you stopped by.
 <p>
 Happy hacking, and God bless you!
 </p>
+
+<?php
+require "templates/footer.php"
+?>

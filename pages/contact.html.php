@@ -1,3 +1,12 @@
+<?php
+$title = "Contact";
+$description = "Directory of mediums I can be contacted by, as well as a link to my PGP key.";
+$keywords = "email, pgp, irc, contact";
+
+require "config.php";
+require "templates/header.php";
+?>
+
 <p>I am available by various means of online communication. If you are
 going to send me an e-mail then please encrypt your messages by using
 <a href="/nicolas@ortegas.org_pub.asc" >my public encryption key</a>. If
@@ -32,3 +41,7 @@ to encrypt your e-mails following their very simple instructions.</p>
 		<li><a href="ircs://irc.oftc.net:6697/debian" >#debian</a></li>
 	</ul>
 </ul>
+
+<?php
+require "templates/footer.php"
+?>
