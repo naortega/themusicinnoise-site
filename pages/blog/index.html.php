@@ -12,14 +12,15 @@ require "templates/header.php";
 <h2>Posts</h2>
 <ul>
 <?php
-$post_iter = new DirectoryIterator(dirname(__FILE__));
-foreach($post_iter as $file_info) {
-	if(!str_ends_with($file_info->getFileInfo(), ".cfg.php"))
+$dir_files = scandir(dirname(__FILE__), SCANDIR_SORT_DESCENDING);
+foreach($dir_files as $file_info) {
+	if(!str_ends_with($file_info, ".cfg.php"))
 		continue;
 
-	require dirname(__FILE__) . $file_info->getFilename();
+	require dirname(__FILE__) . "/" . $file_info;
+	$post_url = str_replace(".cfg.php", ".html", $file_info);
 ?>
-	<li><time><?= $created ?></time> - <a href="<?= $file_info->getFileInfo() ?>" ><?= $title ?></a></li>
+	<li><time><?= $created ?></time> - <a href="<?= $post_url ?>" ><?= $title ?></a></li>
 <?php
 }
 ?>
