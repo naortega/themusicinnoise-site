@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-02-20-parabola-with-lvm-on-luks.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>As of recently I have reinstalled Parabola with a LUKS encrypted partition containing both swap and root (I do not have a separate home partition). I found this to be a long and painful process, but I learned quite a bit from doing it. My current setup is as follows:</p>
 
 <pre>
@@ -65,3 +70,7 @@ lvolswap   -      swap
 
 <p>You should now be able to reboot and startup your new LUKS encrypted Parabola system. I may have forgotten something, if so please send me an e-mail so I can correct it (see my <a href="/contact/" >contact page</a>).</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

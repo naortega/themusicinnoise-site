@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-10-06-rss:-decentralized-subscriptions.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>For years I've had an RSS feed for my blog, but I truly haven't used
 RSS myself for my own subscriptions until quite recently. But since
 watching the Luke Smith video on the matter<sup><a href="#r1" >[1]</a></sup>
@@ -91,3 +96,7 @@ controlled platforms.</p>
 </a>
 </p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

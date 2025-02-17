@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-10-15-disagreement-without-hate-disagreement-with-respect.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I believe that in recent years the situations we've seen politically have gotten worse, people have become polarized, they are shifting towards extreme actions which do nothing but to worsen the situation. More and more I am finding that any form of political disagreement is automatically considered a reason to loathe a person, and therefore disregard them and all that they say. What's more, I believe that it is because we are not seeing each other as people, but rather as a compilation of ideas that this occurs (a rather platonic way of viewing things), when in reality if I change my opinions, my ideas, or anything about myself, I am still the same person, and therefore am I more than the ideas that I have, rather I am a compilation of the actions I have taken in the past leading up to this point in time. I may change my behaviour and no longer agree with my past actions, but I am still that person.</p>
 
 <p>I believe that one issue that contributes to this behaviour is that when we discuss our opinions with others we assume that it's going to only go one way: us convincing the other party that we're right. In reality this rarely ever happens precisely because of this mentality (because the other person has it as well). This means that neither side is willing to actually listen and analyze the argument of the other party with regards to their own, and therefore cannot even evolve their own argument, which will forever remain at an elementary state because it has never been challenged and therefore never tested to defend itself. I have found when talking to friends and family of mine that disagree that a better mindset to have with this isn't to want to convince them, but rather to have my discussion simply serve as a way for me to evolve my own argument. In all likelihood, you will never be able to convince them of your argument, and therefore the most you can get out of such a conversation is to improve your own by challenging your own ideas and reforming them to the new counter-arguments you encounter.</p>
@@ -10,3 +15,7 @@
 
 <p>The fact of the matter seems to be that neither side now is tolerant of the other, and therefore such a situation can only continue to escalate into more violence.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

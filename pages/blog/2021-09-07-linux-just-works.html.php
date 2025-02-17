@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-09-07-linux-just-works.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Recently, after having setup my MACCHIATObin as a desktop computer, I've
 decided to move most of my computing to that, and therefore my x86 laptop is
 going to be mostly unused. As such I decided to install something more
@@ -82,3 +87,7 @@ for or even interested in.</p>
 
 <p>Basically, techies, if you want normal people to use Linux, stop scaring them
 by telling them to install ArchLinux or alike.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-04-20-new-media-usage.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Anyone that knows me personally - or maybe I've mentioned this in a
 previous post - knows that I'm generally a technology skeptic. I'm
 highly skeptical of new technologies, and I'm very conscious about the
@@ -97,3 +102,7 @@ that which is meaningful.</p>
 <ol class="refs" >
 	<li id="r1" ><a href="https://www.wordonfire.org/" >Word on Fire</a></li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

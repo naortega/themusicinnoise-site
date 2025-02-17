@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-12-20-my-recent-dislike-for-oop-languages.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Recently I have found myself disliking OOPLs , and I'd like to explain my reasoning for this. I'd also like to note that this may not necessarily apply to all OOPLs or uses of them, but it does apply to those which I am familiar with (primarily C++ and Java).</p>
 
 <p>At my university the teachers use a lot of C++, in the Fundamentals of Programming class (teaching the absolute basics, like variables, loops, conditionals, data types, structures, etc.) they used C++ even though the features they were using were just as easily available on C. Then in the OOP class I had the next term they continued to use C++, this year it's used for my Data Structures class and next term I'll be using Java for the Artificial Intelligence course. OOPLs seem to be extremely popular, at least at my university. However, because of this and having to work with them a lot in a stricter project environment (versus my experience with solo projects or small cooperative projects), and with it I've come to see some reasons for disliking them.</p>
@@ -10,3 +15,7 @@
 
 <p>As I mentioned before, there may be exceptions to this with certain languages, my experience is mostly with Java and C++, but I believe this is a paradigm issue. This doesn't mean that OOPLs aren't useful, but I dislike them compared to a much simpler C.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

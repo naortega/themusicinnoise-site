@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-06-21-humour.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In many countries in the West xenophobia has been rising, yet I have not seen this kind of behaviour in Andalusia. This made me wonder why it was that in Andalusia people weren't as affected as in (for example) the rest of Europe or the USA. Of course, the only thing I can really compare to is the Mid-West in the USA, since that's the only other place I've lived. However, with this I've noticed one key difference between the two: in Andalusia humour is not limited while in the Mid-West humour must bend to what is considered 'socially acceptable'.</p>
 
 <p>Humour, especially satire, serves the purpose of allowing us to look at things from a critical and comical perspective, but by using humour we also allow ourselves to look upon our own beliefs in this critical and comical way. It is also a sign that we can loosen up around someone, if I can tell jokes to a person then I feel more comfortable around them, I feel like I don't have to censor myself, free to speak my mind. This is very good for relieving tensions, since we'll feel more comfortable and amiable.</p>
@@ -10,3 +15,7 @@
 
 <p>For this reason I think it is important that we do not limit humour nor speech, and instead we should embrace humour that is critical of our beliefs and opinions, to accept that stereotypes exist and for a reason. Otherwise we're only worsening the issue at hand.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

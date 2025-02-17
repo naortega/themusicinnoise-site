@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-12-02-gentoo-and-how-its-useful.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>So, for maybe several months now I've been running Gentoo as my main distribution, keeping a dual-boot with ArchLinux. This was mostly because I wanted to start using more <a href="http://suckless.org/" target="_blank" >suckless</a> software, and for that I needed to use a system where the packages are compiled so that patches can easily be applied. After considering a few options I decided to simply go with Gentoo.</p>
 
 <p>Now, in case you're not familiar with Gentoo, it's a distribution that uses a package manager called <code>emerge</code> along with a management system called <i>portage</i> that is similar to the <i>ports</i> that some BSD distributions have. Under this system, all packages are compiled (save for some alternative binary packages ending in <code>*-bin</code>), and you have to manually configure and compile software like the Linux kernel. This has come with pros and cons.</p>
@@ -8,3 +13,7 @@
 
 <p>So overall, I've seen it as a net-positive. Gentoo will teach you a lot more about your system along the way. It's not the best distribution for everything - I still use ArchLinux for video-games and any media applications - but it definitely has its place in the world.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

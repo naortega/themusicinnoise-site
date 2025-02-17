@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-12-25-merry-grav-mass.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Merry <a href="https://stallman.org/grav-mass.html" target="_blank" >Grav-Mass</a>!</p>
 
 <p>Today is the day that <a href="https://en.wikipedia.org/wiki/Isaac_Newton" target="_blank" >Isaac Newton</a>, the man who discovered the laws of motion as well as having invented Calculus, was born. Many things that today we take for granted would not have been possible without his discoveries, and therefore deserves a day of recognition.</p>
@@ -6,3 +11,7 @@
 
 <p>There are many ways to celebrate Grav-Mass, the link above to Stallman's page on the holiday has some very common ways of celebrating the holiday. However, in my opinion, the most important part is making sure that this holiday you promote, talk about, and learn anything math related or science related and sharing with friends.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

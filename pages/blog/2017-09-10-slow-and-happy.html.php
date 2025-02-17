@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-09-10-slow-and-happy.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>For someone like me, one of the most damaging aspects of the society we live in is the constant stress and anxiety we feel throughout our lives, how we rarely have the time to reflect, to stop and think for a while, or simply to do nothing (yes, I mean nothing). I believe there are multiple reasons for this kind of behaviour and stress, multiple reasons why we are extremely over our heads with no time for ourselves or those around us, and as one can read online, there are many that agree with me.</p>
 
 <p>One of the things I seek in my life the most is leisure time, time where nothing is planned, nothing is structured, those free slots in my schedule where I can decide what I want to do in the moment. During this leisure time I have the ability to take part in a variety of activities that can allow me to express myself through different productive and creative mediums. This gives me lots of time to concentrate on things that I enjoy doing and can see the fruits of my own production. However, it seems that society is constantly working against me in this regard, wanting me to constantly do other things, and there are a few things in our daily lives that do this to us through various means. They work as time hoarders, distracting us from the passage of time and leaving us somewhat numb and divorced from reality (something that many enjoy at the end of a long work week to avoid having to deal with their stressful lives). These time hoarders work as opiates to pacify us, but only in the sense that we are left helplessly without time to ourselves, and the time, instead of being taken advantage of to enjoy it in something that will create long-term happiness, we take a dose of the opiate the pacifies in preparation for the next laborious work week.</p>
@@ -12,3 +17,7 @@
 
 <p>You can conclude from this what you will, and do what you please after reading this, but I'm pretty sure that if you free up some time in your day, and even do a little bit of nothing here and there, you'll end up feeling a lot happier with yourself.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

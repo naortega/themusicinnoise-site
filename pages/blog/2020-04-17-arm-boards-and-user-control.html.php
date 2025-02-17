@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-04-17-arm-boards-and-user-control.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In the past I've mentioned both ARM and even the ARM-based laptop
 currently in development, the MNT Reform. Since they do not use any kind
 of microcode for system instructions, it is a very appealing alternative
@@ -43,3 +48,7 @@ href="http://macchiatobin.net/" target="_blank" >Marvell
 MACCHIATObin</a>. It will be exciting to see what ARM has in store for
 us and the free software movement.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

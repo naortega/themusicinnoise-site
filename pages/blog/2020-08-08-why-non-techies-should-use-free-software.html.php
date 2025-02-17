@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-08-08-why-non-techies-should-use-free-software.cfg.php';
+require 'templates/blog-header.php';
+?>
 <ul>
 	<li>Freedom 0: to run the program as you wish, for any purpose.</li>
 	<li>Freedom 1: to study how the program works, and change it so it
@@ -72,3 +77,7 @@ which would grant me the most control over my system. I aimed to be the
 one true owner of my system in its entirety. And this can only be
 accomplished by using Free Software.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

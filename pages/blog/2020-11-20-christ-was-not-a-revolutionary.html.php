@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-11-20-christ-was-not-a-revolutionary.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>"Jesus was a revolutionary", "Jesus Christ's revolutionary message",
 "the Christian revolution." These are phrases we've probably all heard
 before in reference to Jesus Christ and His teachings. Most notably,
@@ -84,3 +89,7 @@ Jesus Christ a <i>revolutionary</i>.</p>
 	   target="_blank" >
 	   https://www.vatican.va/archive/ccc_css/archive/catechism/p1s1c2a2.htm
 </a>
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-02-19-culture-as-a-common-good.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>As anyone who is familiar with my works (and their licenses) would
 know, I am very much a supporter of what's known as Free
 Culture<sup><a href="#r1" >[1]</a></sup> and Free
@@ -172,3 +177,7 @@ others.</p>
 	    href="https://creativecommons.org/choose/"
 		target="_blank" >
 		https://creativecommons.org/choose/</a>
+
+<?php
+require 'templates/blog-footer.php';
+?>

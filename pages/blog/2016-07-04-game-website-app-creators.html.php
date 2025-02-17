@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-07-04-game-website-app-creators.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>A topic that I am very disturbed about are Game/Website creators. These
 programs are what I consider is helping to destroy the technology industry.
 Not only is this causing for more people to be able to create mediocre apps
@@ -55,3 +60,7 @@ long line</b> of HTML and CSS). Other than that, <b>no game creators</b> and
 <b>no app creators</b>. All these do is ruin the the programming industry and
 turn code quality down, performance down, and wages down.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

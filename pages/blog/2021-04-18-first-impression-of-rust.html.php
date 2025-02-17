@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-04-18-first-impression-of-rust.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I'd like to make it clear first that I by no means have extensive
 experience with the Rust programming language, nor will I be diving into
 the more technical aspects of Rust as a language. This is simply my
@@ -98,3 +103,7 @@ where it goes from here.</p>
 <ol class="refs" >
 	<li id="r1" ><a href="https://gitlab.com/naortega/indivisible" target="_blank" >Indivisible GitLab Page</a></li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

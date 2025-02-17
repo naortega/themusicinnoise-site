@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-07-31-my-first-superficial-impressions-of-freebsd.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I have recently decided to run FreeBSD inside of a VM to try it out (because why not?). Of course, the first thing I was wondering when I got it installed was "Where's the GUI?". I didn't necessarily panic since I know how to deal with the command-line, and BSD seems to also use Bash (or some other Unix shell). So after getting a GUI installed I continued to check out FreeBSD (I wanted to try out BSD because I wanted to try compiling the <a href="https://notabug.org/bkeys/DMUX" target="_blank" >DMUX project</a> on a BSD system). I noticed that apparently FreeBSD had done an extremely basic install, only installing the bare necessities, which in my book is a pretty big plus (something I'm going to start doing with Debian from now on with their net installs).</p>
 
 <p>Another thing that they do that I found rather interesting is how they have the ports packaging system so you can compile things from source rather than installing a pre-compiled binary (which you can still do, but through the pkg package manager). I found this quite amusing, but ended up finding it to be a waste of time (since I don't necessarily care too much for compiling absolutely everything I download), so I continued using the pkg package manager. But this does show a certain amount of consistency with a Free Software ideology, and it wouldn't be too bad to implement a system similar to it (which might already exist, I haven't tried Gentoo out yet) in which the package manager downloads the source, compiles it, installs the binary, and deletes the source except if specified otherwise. It would most likely take longer for larger projects (you tell me how long it would take to download and compile the Firefox source), but it would be pretty cool, especially for educational purposes at a school.</p>
@@ -6,3 +11,7 @@
 
 <p>So overall I've had a very positive experience with FreeBSD, especially with how they have a very minimal install of their OS. I would not use it as a primary OS, since regardless of how much I like how they do things there are just not as many applications for their OS, as well how they do not make the amount of effort that other OSs like Debian make to separate free software from non-free software. However, if I were ever to have the opportunity to run this as a home server I would definitely try that out (might try installing it on my Raspberry Pi).</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

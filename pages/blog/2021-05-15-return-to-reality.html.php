@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-05-15-return-to-reality.cfg.php';
+require 'templates/blog-header.php';
+?>
 <blockquote>
 	Abstractions are created by human beings and have no existence apart
 	from the human mind. Thus, especially these days when moral
@@ -184,3 +189,7 @@ nature.</p>
 		<i>Catechism of the Catholic Church</i> § 676
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

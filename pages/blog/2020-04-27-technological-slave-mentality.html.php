@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-04-27-technological-slave-mentality.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In light of the COVID-19 crisis and the rising trend of digital
 technological solutions to our social confinement efforts, I thought I
 would take the opportunity to go over the issue of what I call
@@ -81,3 +86,7 @@ extraordinary measures should remain extraordinary, and the moment we
 return to ordinary circumstances, ordinary measures should be
 restored.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

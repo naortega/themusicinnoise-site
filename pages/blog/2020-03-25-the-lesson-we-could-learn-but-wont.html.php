@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-03-25-the-lesson-we-could-learn-but-wont.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>With the current spread of the COVID-19 virus, we're currently seeing
 the consequences of our highly interconnected global society. What
 started out as a small outbreak in a province of China became a global
@@ -58,3 +63,7 @@ but no attempt to truly solve the problem at hand.</p>
 
 <p>My suggestion: leave the cities.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

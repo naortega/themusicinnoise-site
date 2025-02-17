@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-09-06-the-authentic.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>A while back I had read an article by <i>The Art of Manliness</i> on
 why we shouldn't be <i>authentic</i>, but rather <i>artificial</i>.
 <sup><a href="#r1" >[1]</a></sup> The logic was that being
@@ -63,3 +68,7 @@ as we truly live out our real nature.</p>
 	  target="_blank" >https://lukesmith.xyz/poetic.html</a>
 </p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

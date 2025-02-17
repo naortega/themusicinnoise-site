@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2024-11-11-introducing-menu-helper.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>For a long time now I've been trying to develop a program that would help to
 choose meals for the week, and I've finally made it.</p>
 
@@ -38,3 +43,7 @@ information.<sup><a href="r3" >[3]</a></sup>
 	<li id="r2" ><a href="https://github.com/naortega/menu-helper" target="_blank" >naortega/menu-helper: [MIRROR] A small program to help pick meals from a database of recipes.</a></li>
 	<li id="r3" ><a href="https://code.ortegas.org/nortega/menu-helper/src/branch/master/README.md#contributing" target="_blank" >menu-helper/README.md Contributing - Ortega Code</a></li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

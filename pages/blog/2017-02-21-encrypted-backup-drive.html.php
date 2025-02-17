@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-02-21-encrypted-backup-drive.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In my previous post I demonstrated how to setup LVM on LUKS with Parabola GNU/Linux-libre. However, what good is an encrypted hard drive if your backups are completely vulnerable? So here's a small guide on setting up a LUKS partition on your backup device.</p>
 
 <p>In reality it's basically the same as setting up LUKS for Parabola, but I'm not going to make you read all that just to get a LUKS partition setup on your external hard drive. Please note that I'll be referring to the external device as <code>`/dev/sdb'</code>, if it's different for you <b>use your device's path!</b></p>
@@ -12,3 +17,7 @@
 
 <p>Just remember that every time you want to mount the device you will have to run the <code>`cryptsetup luksOpen ...'</code> to mount and <code>`cryptsetup luksClose ...'</code> to dismount.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

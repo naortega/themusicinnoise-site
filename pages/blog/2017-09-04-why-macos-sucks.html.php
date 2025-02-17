@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-09-04-why-macos-sucks.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>As promised, a criticism of Apple MacOS (or whatever people are calling it nowadays), of course, this will mostly be mixed in with issues I have with Apple itself, and some of them may sound familiar (because they're the same as with Windows). I'd also like to note that I haven't seen or used a Mac computer for personal use for maybe 7 years, so the information I provide may be antiquated, or I may be leaving stuff out that they came up with recently (or simply I forgot because of how bad it was). So let's jump into this!</p>
 
 <ol>
@@ -9,3 +14,7 @@
 
 <p>As you can see, I have less complaints about Apple Mac than I do Windows, which is not surprising considering that Mac is a UNIX-like system based upon BSD. Still, I wouldn't use it.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

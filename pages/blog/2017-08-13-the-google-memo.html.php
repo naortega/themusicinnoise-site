@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-08-13-the-google-memo.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Normally I dislike hopping onto bandwagons for this blog, but this is about a field that I am very involved in: the technology field. Recently a Google employee sent out an internal memo that later was published for the whole world to see (you can read the full memo <a href="https://diversitymemo.com/" target="_blank" >here</a>). This memo spawn much controversy, and so I wanted to see the memo itself.</p>
 
 <p>Firstly I would like to bring up that the firing of this man is something that I consider completely unacceptable. People should not be fired for their personal opinions so long as they recognize that they are in a work environment and while at work only do so within the context of work (as this man has done). Otherwise we resort to the same kind of witch hunt that there was against Communists, Socialists, and Anarchists in the 50s.</p>
@@ -8,3 +13,7 @@
 
 <p>The difference in proportion of women in STEM and men in arts and humanities is not something that can be solved at such a high level, not by companies like Google, and not by universities like my own. This is something that needs to be solved at a younger age by public schools and (most importantly) at home when raising children. What use does it make to have companies like Google make tech jobs more attractive for women when there aren't that many women even studying it in university? And what use does it make to have universities lower tuition for women in tech when not many women want to go into tech to begin with? The problem is much much deeper than these. Stop trying to blame administrators for being sexist and try looking at your own life and flaws. What are you training your daughter and son to like and enjoy doing? Why is your daughter going for a liberal arts degree while your son is going for a degree in civil engineering? Try fixing your own flaws and being consistent with your own ideas before trying to correct the behaviour of others. There are some minor inconsistencies that will always be there, but we must not stop trying to improve ourselves.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

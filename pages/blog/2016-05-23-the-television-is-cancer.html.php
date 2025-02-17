@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-05-23-the-television-is-cancer.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>If there is one thing that I have noticed in both the U.S. and Spain which
 annoys me the most, it's the addiction there is to the television. Of
 course, by television I am not only referring to the physical TV unit but
@@ -48,3 +53,7 @@ they're watching in terms of cinematography).</p>
 <p>So, please, keep your bad TV habits to yourselves unless mutual interest is
 explicitly stated, in which case go full throttle ahead.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

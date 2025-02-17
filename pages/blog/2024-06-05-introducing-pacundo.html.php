@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2024-06-05-introducing-pacundo.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>This is a bit of shameless self-promotion, but I think that anyone running an
 ArchLinux machine will probably appreciate this.</p>
 
@@ -40,3 +45,7 @@ it should work on any ArchLinux derivative distribution.</p>
 	<li id="r4" ><a href="https://code.ortegas.org/nortega/pacundo/src/branch/master/README.md#contributing" target="_blank" >pacundo/README.md Contributing - Ortega Code</a></li>
 	<li id="r5" ><a href="https://github.com/naortega/pacundo" target="_blank" >GitHub - naortega/pacundo: [MIRROR] A time machine to roll back your ArchLinux machine to a working state.</a></li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-08-11-git-main-vs-master-branch.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>So a few weeks ago while trying to create a Git project I noticed that Git
 had asked me if I would like to set a new name in my configuration for the
 default Git branch, and it suggested the use of <code>main</code> (rather than
@@ -80,3 +85,7 @@ anyways.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

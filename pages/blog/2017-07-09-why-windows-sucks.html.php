@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-07-09-why-windows-sucks.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>For those of you who use GNU/Linux or BSD (or basically any other UNIX-like system) this post will come as no surprise to you, but I still felt the urge to make it anyways. I currently do not run Microsoft Windows anymore, but I still have to use under certain circumstances for classes and such as well as constantly hearing from friends (who run Windows as their main OS for some stupid reason) and news articles about the newest stupid thing they've added to annoy their users. So, let's get started on the bashing of the dead horse. (Why? Because it's fun.)</p>
 
 <ol>
@@ -14,3 +19,7 @@
 
 <p>This'll probably be it for the Windows bashing, but if you use MacOS/OSX, don't think you're off the hook, "Why MacOS Sucks" is coming very soon.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

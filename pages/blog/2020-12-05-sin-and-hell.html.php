@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-12-05-sin-and-hell.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In an age dominated by Moral Relativism and Free Examination of
 Conscience, it is common for us to avoid the topics of Sin and Hell, or
 even to deny them, adopting instead the heresy of Universalism - i.e.
@@ -116,3 +121,7 @@ Catholic Church Herself has to say on the matter by reading paragraphs
 1440<br />
 <label id="r3" >[3]</label> <i>Catechism of the Catholic Church</i> §
 1872
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-10-13-software-used-in-summer.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>As someone who moves around a lot, I dislike having to bring lots of equipment with me, this includes amplifiers, keyboards, etc. Therefore, what I prefer to do is the run software that simulates these. I have used software <a href="http://zynaddsubfx.sourceforge.net/" target="_blank" >ZynAddSubFX</a> and <a href="https://lmms.io/" target="_blank" >LMMS</a> in previous albums, but I've also experimented before with tools that I'm using for the new album, <a href="/projects/music/summer/" ><i>Summer</i></a>.</p>
 
 <p>One of my primary tools with this album is <a href="http://guitarix.org/" target="_blank" >Guitarix</a>, a virtual guitar amplifier with many effects. In this sense, I find Guitarix to be a lot more useful than an actual amplifier, since it already comes with many effects that otherwise I'd have to get individual pedals for each new effect. What's more, since it works with <a href="https://en.wikipedia.org/wiki/JACK_Audio_Connection_Kit" target="_blank" >JACK</a> I'm able to plug in different sound inputs (including synthesizers) as well as choosing where to send the output of the program. I manage this through the <a href="https://qjackctl.sourceforge.io/" target="_blank" >QjackCtl</a>, which makes plugging the different inputs/outputs very simple. In order to plug in the guitar I use a special cable that has a jack pin on one end and a USB connector on the other (no need for microphones with background noise).</p>
@@ -12,3 +17,7 @@
 
 <p>As an appended news on the album's progress, it's currently slowed down a bit, but I'm hoping to release it in time for the summer of 2018. It all depends on the time I have and when my creative juices begin to flow.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

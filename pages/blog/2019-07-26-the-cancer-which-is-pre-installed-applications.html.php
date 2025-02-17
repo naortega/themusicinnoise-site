@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-07-26-the-cancer-which-is-pre-installed-applications.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Have you ever bought a new phone and seen that half its storage is already used up by apps you never wanted? Have you ever gotten a new computer and seen that the OS itself occupies 20-30GiB because it comes with a bunch of utilities and features you didn't ask for? If you run almost any UNIX, Linux, or BSD distribution your answer is "no". However, you probably know exactly what I'm talking about, and it's one of the reasons you don't use Google, Microsoft, or Apple products. In my case, I personally don't have this problem, but my grandparents do.</p>
 
 <p>My grandparents have Android and MacOS devices, and the storage on these is always being filled. It's not because of photos and videos, because even though my Grandmother takes many whenever there is a family event she puts them all on Google servers (Google Photos or something). No, they are filled up to the brim with stupid apps that my grandparents will never use. The only apps my grandparents need are WhatsApp, <a href="https://wire.com/en/" target="_blank" >Wire</a>, phone, camera, browser, and the app to get the bus schedule. However, the phones they have come with a bunch of other applications that they will never use, such as: sports app, stock market app, PDF reader, document editor (which is stupid for a phone anyways), stupid mobile games they've never played, etc., and none of these can be uninstalled. All these extra apps on their devices do nothing more than to complicate their user experience, giving them a harder time managing their devices. At the end of the day, they come to me to solve their issues, and there's nothing I can do since I cannot uninstall the apps. I try to factory reset the apps (i.e. remove updates) which helps a little, but then the app store wants to update them.</p>
@@ -10,3 +15,7 @@
 
 <p>I'm pretty sure that many people have a similar situation with their parents/grandparents, and although I do not have a solution for mobile (if you know of a free software mobile OS with a simple and consistent UI, please go to my contact page and send me an e-mail) there is most definitely a solution for laptops and desktops: Linux. Although the installation isn't always easy (you should do this for them), using Linux can be extremely easy (considering the elderly mostly just use the web browser), especially if you know what desktop environment to install. If they are used to using Microsoft Windows, try using <a href="https://kde.org/" target="_blank" >KDE</a>. Otherwise, look into using DEs with a simple UI as well as a history without major changes, such as: <a href="https://cinnamon-spices.linuxmint.com/" target="_blank" >Cinnamon</a>, <a href="https://mate-desktop.org/" target="_blank" >MATE</a>, or <a href="https://xfce.org/" target="_blank" >Xfce</a>. If you're a GNOME fanboy, sorry, but GNOME doesn't make the cut since they had such a massive change to their UI paradigm going from GNOME 2 to GNOME 3. Also, use a distro known for stability and where you can easily automate updates. I've found that rolling release distros are a real help here, despite the supposed instability you get from running new software.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

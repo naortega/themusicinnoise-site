@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-09-24-trent-horn-capitalism-and-socialism.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Perhaps one of my favorite Catholic Apologists is Trent Horn. He does an
 amazing job at calmly and concisely explaining Catholic doctrines on Faith &amp;
 Morals in a very rational manner. He has been fundamental in my formation as a
@@ -107,3 +112,7 @@ which are not strictly Capitalist. Overall, his definitions cause confusion.</p>
 		Marx &amp; Friedrich Engels
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

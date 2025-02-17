@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-07-18-my-favorite-firefox-addons.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I use Firefox on a regular basis as my default browser, and something that
 I really enjoy about it is the vast number of addons (especially for
 developers) which can be hard to find anywhere else. These addons range
@@ -85,3 +90,7 @@ best plugins I've come across.</p>
 
 <p><b>EDIT 2018/06/24:</b> You may have noticed that some of these addons no longer work with newer versions of Firefox. This is why I've moved to Waterfox, which keeps the old addon system.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

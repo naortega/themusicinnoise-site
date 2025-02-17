@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-08-20-my-loathing-of-apple.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I hate Apple, and I've had many bad experiences with them. Aside from how they are spying on you <a href="https://en.wikipedia.org/wiki/PRISM_%28surveillance_program%29" target="_blank" >being part of PRISM</a>, in general they are impossible with anyone who wants to use their products in combination with anyone else's. Let me explain my experiences that I have had with Apple.</p>
 
 <p>For the first 15 years of my life I was an Apple user, using iPods, iPads, iMacs, and iStuff in general. I was exposed to stuff like GNU/Linux at school (because the Spanish school system actually uses ethical software, sadly only because they can't afford proprietary stuff, but whatever), especially with Debian GNU/Linux because that's what my dad ran for work, but I still used mostly Apple products. However, at 15 I got my first personal laptop, which was a Dell Inspiron something or another, all I remember is it was a 32-bit with 1GB of RAM, so obviously I installed GNU/Linux on it, specifically Debian GNU/Linux (at the time I had stable since my dad was the one helping me to install it). So I had my own computer, but my music player was still an iPod... Why was this a problem? Because iPods didn't want to sync with anything that wasn't iTunes. I had to do something like using my family's Apple Mac (non-free software) to turn off the journaling on that thing and then every now and then I had to do it again because the iPod noticed!!! Unlike some other music players where I can <b>drag and drop my files</b>.</p>
@@ -10,3 +15,7 @@
 
 <p>So now you know my story. I <b>hate</b> Apple, I hate them even more than I hate Microsoft and their nonsense, in the case of Apple it's just personal. So if you ever know me, or already do and never knew this, <b>don't get me anything Apple</b>. It might be harsh but I would probably end up either asking you for the receipt or at the very most saying thank you and then stashing it somewhere in <b>someone else's</b> house where it can't track me (PRISM). Speaking of gifts, if you're reading this and wondering what to get me now that you can't buy me the latest iStuff, please refer back to my blog post on <a href="/blog/post/50/" >Ethical Giving</a> which uses the FSF's guide to finding an ethical technological gift for someone.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

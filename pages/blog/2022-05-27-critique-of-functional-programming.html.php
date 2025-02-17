@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2022-05-27-critique-of-functional-programming.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I've been using Rust for a while now, particularly on my pet project,
 Indivisible,<sup><a href="#r1" >[1]</a></sup> and one very key feature of Rust
 is that it's designed to be used primarily with the functional programming
@@ -126,3 +131,7 @@ programming.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

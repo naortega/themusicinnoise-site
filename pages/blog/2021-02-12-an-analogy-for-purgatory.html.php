@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-02-12-an-analogy-for-purgatory.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Purgatory is perhaps one of the most misunderstood Catholic doctrine.
 So much so that even many Catholics have difficulty understanding it.
 Protestants will err in saying that it's a sort of waiting room before a
@@ -44,3 +49,7 @@ true for wounds of the soul? Our souls require healing and
 purification.</p>
 
 <label id="r1" >[1]</label> <i>Catechism of the Catholic Church</i> § 1871
+
+<?php
+require 'templates/blog-footer.php';
+?>

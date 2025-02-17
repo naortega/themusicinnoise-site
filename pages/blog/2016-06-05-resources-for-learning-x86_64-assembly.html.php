@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-06-05-resources-for-learning-x86_64-assembly.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I guess this will be a post of mine that will actually be useful for
 something...</p>
 
@@ -54,3 +59,7 @@ the other.</p>
 sure there are more, but this is what I have to offer you. I hope this
 post is helpful.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

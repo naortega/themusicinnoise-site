@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-10-23-pope-francis-on-same-sex-civil-unions.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Recently there has been a scandal within the Church over footage
 found in the recent documentary "Francesco" on Pope Francis. News
 outlets everywhere have been exclaiming how this footage shows Pope
@@ -126,3 +131,7 @@ this manipulation of what the Holy Father was trying to say.</p>
 	   target="_blank" >
 	   https://nitter.net/Patricio_F99/status/1319124510415650816</a>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

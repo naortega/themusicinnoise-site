@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-12-24-books.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Nowadays we are very used to being pounded with the ever more popular idea that books are sacred and that anything digital is somehow impure (even if it's the same material but on a screen). This is something that has bothered me very much, especially as someone who does not read many physical books, but does read a lot of material online. And I'd like to point out that this belief is completely unfounded, and that, at least from what I see, the digital reading is being much more beneficial to society than the physical books.</p>
 
 <p>To begin, if I am reading the same material but I'm doing it on my computer rather than with a physical book, what's the difference? Yes, I know that you tend to remember things better that are on paper (I've seen this on many articles <b>online</b>), however that does not change the quality of the content if the content is <b>exactly the same</b>. So if I'm reading something digitally cut the crap.</p>
@@ -12,3 +17,7 @@
 
 <p>So, next time you're about to tell some kids in a classroom about how "important it is to read <b>from a book</b>", just remember that some people read a lot more productive material online that those who read it from books.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

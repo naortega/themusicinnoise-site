@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-12-12-what-is-love.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I don't normally like making pop culture references, but with this
 topic I find it too tempting. Ironically, however, the famous song by
 Haddaway "What is Love?" doesn't actually answer the question, but is
@@ -81,3 +86,7 @@ non possidebunt</i>.<sup><a href="#r2" >[2]</a></sup></p>
 22:37-40<br />
 <label id="r2" >[2]</label> First Letter to the Corinthians 6:9-10
 (Vulgate)
+
+<?php
+require 'templates/blog-footer.php';
+?>

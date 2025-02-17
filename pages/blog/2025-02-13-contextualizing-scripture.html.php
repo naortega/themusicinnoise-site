@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2025-02-13-contextualizing-scripture.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>
 Generally when reading the Holy Scriptures I like to read from a Bible that
 contains a lot of footnotes. In one of them (a large edition of the Jerusalem
@@ -62,3 +67,7 @@ understand the meaning behind the words of the text. We must remember that
 Scripture, like any sign, is a visible symbol of an invisible (and spiritual)
 reality.
 </p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

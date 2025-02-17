@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-12-05-why-i-use-cli.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>For those of you who don't know, CLI means Command-Line Interface. I'm a huge fan of using CLI over their GUI (Graphical User Interface) alternatives, to the extent that typically the only non-terminal windows I have open is simply one: my browser (IceCat). I would not like to switch my browser to CLI for various reasons, but everything else is. Everything else (e-mail, IRC, music, password manager, etc.) is all in the terminal. I do this for multiple reasons.</p>
 
 <p>First one is that it's better performance. Instead of spending so many resources on other applications (like e-mail clients and music players, which tend to be rather heavy) I can reserve those resources for other applications, such as VMs or any heavy-duty program I may be running at that moment in time. Of course, I do have a small contradiction on this one which is that I use GNOME3 as my DE, which, for those of you who are not familiar with it, is a somewhat heavy DE. My excuse for this is simply that I'm used to GNOME and all of its nice keyboard shortcuts, that and its interface feels very natural and slick to me.</p>
@@ -10,3 +15,7 @@
 
 <p>Now, there are some drawbacks to this, of course. One of the drawbacks is learning to use the tools, they're usually not as intuitive, however I usually find this worth it since my productivity then goes up. The second is that this can somewhat scare people away from using GNU/Linux because they think (by seeing you/me) that if you want to use GNU/Linux you also have to use CLI, which is not necessarily the case (depends mostly on the distro and installation). However, I generally do not care for this aspect as much as to change my CLI habits.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

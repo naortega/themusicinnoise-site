@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2022-06-02-love-and-desire.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>About a year and a half ago I wrote an article on the topic of love, and what
 distinguishes it from taste (i.e. loving from liking).
 <sup><a href="#r1" >[1]</a></sup> This article is similar, but instead of
@@ -48,3 +53,7 @@ themselves furthest from God, that by His grace they may be lead to Him.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

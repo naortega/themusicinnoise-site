@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2023-03-14-in-out-parameters.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>
 So at work I have to deal with a codebase that works with C and C++. In the part
 of the code that is C++ specifically I'll often find lots of reference
@@ -103,3 +108,7 @@ you're trying to modify a constant parameter and it will yell at you.
 Well, there you go. No more excuses. Now you can continue to write good C/C++
 code like a boss, but without creating headaches for some poor future developer.
 </p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

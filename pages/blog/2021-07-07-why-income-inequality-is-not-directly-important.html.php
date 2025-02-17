@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-07-07-why-income-inequality-is-not-directly-important.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Originally I had planned to make the title of this post "Why Income
 Inequality is not Important", but I realized that this could be
 misleading as to what I'm actually trying to express. Although I'm
@@ -104,3 +109,7 @@ fix the right thing.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

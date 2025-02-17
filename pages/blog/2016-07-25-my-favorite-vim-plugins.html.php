@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-07-25-my-favorite-vim-plugins.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I've already made post about my favorite Firefox addons, so this one is dedicated to my favorite editor, Vim. Most people's first encounter with Vim is always a bad one (even mine), but once I got used to it's weird key bindings and commands I got used to it and now I quite enjoy it, especially with all of its plugins available that are very easy to install with a plugin called <a href="https://github.com/VundleVim/Vundle.vim" target="_blank" >Vundle</a>, which can be used to install all the other plugins by simply providing a link to their git repository (since most of these plugins tend to be on GitHub). So here it goes.</p>
 
 <p><a href="https://github.com/tpope/vim-fugitive" target="_blank" ><u>Vim-Fugitive</u></a>: This plugin is great since it allows you to work with Git from within Vim, that is, you can commit, switch branches, push, or anything really, all from within Vim.</p>
@@ -18,3 +23,7 @@
 
 <p>Of course, I use more than these, but these are the ones I like the most. I will most likely end up installing way more in the future, but these are truly useful.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

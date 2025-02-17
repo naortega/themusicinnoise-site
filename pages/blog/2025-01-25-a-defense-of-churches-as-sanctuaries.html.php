@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2025-01-25-a-defense-of-churches-as-sanctuaries.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>
 A few days ago I was listening to NPR's <i>Up First</i> podcast when they began
 to talk about the new policies at ICE ever since Trump came into
@@ -103,3 +108,7 @@ that some may be better than others.
 	<li id="r2" ><i>Catechism of the Catholic Church</i> § 2266</li>
 	<li id="r3" >Ibid.</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

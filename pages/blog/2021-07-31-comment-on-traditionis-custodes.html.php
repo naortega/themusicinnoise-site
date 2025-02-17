@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-07-31-comment-on-traditionis-custodes.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I hadn't wanted to comment on this for a while, especially to see how it
 actually ended up playing out, but finally I believe it's time to bring up the
 elephant in the room.</p>
@@ -80,3 +85,7 @@ Tridentine Mass.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

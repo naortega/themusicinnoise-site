@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2022-02-17-account-proliferation.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>A tendency that has been greatly bothering me recently regarding modern
 systems - on the web, desktop applications, OSs or otherwise - is the increasing
 number of them that require new users to register an account for their usage.
@@ -53,3 +58,7 @@ needed a place to rant about something stupid.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

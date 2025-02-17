@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-02-19-how-to-behave-at-the-mass.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p><i>Recently I have attained a Roman Missal so as to better follow the
 Traditional Latin Mass. In its introduction it contains different
 sections on the Catholic Faith and how to live it. One of these sections
@@ -78,3 +83,7 @@ incarnate of the Virgin Mary, and became man."</p>
 which is read at the end of the Traditional Latin Liturgy which is a
 reading of John I, specifically verse XIV at "and the Word was made
 flesh."</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

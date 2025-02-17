@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2018-12-08-getting-more-women-in-technology.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I've gone over before in my post about the Google memo, on how our current way of encouraging women to take STEM courses is failing. Here, rather than focusing on the Google memo itself, I'd like to suggest how this issue can be fixed.</p>
 
 <p>Firstly, it's very obvious by the statistics <a href="https://www.npr.org/sections/money/2014/10/21/357629765/when-women-stopped-coding" target="_blank" >that computer science specifically is what's having problems attracting women</a>, despite all the efforts that have been made in the last decade to encourage more women to enter the field of computer science, it seems to either have a negative effect or no effect at all (since statistically speaking, based on those numbers, you could not say it's been working). So what has been our strategy so far in this field? Well, most of it has taken the form of your typical market strategies (i.e. <a href="https://www.womenintechnology.org/scholarships" target="_blank" >subsidizing tuition costs for women taking certain fields</a>, <a href="https://smallbusiness.chron.com/tax-incentives-using-minorityowned-business-30659.html" target="_blank" >giving tax breaks to companies to hire more women</a>, etc.). Fact of the matter is, women still don't like tech, and it seems that less and less of them do since around the mid-80s.</p>
@@ -12,3 +17,7 @@
 
 <p>Now, taking all this into consideration, it's important to remember that our goal is to bring more women into tech, not discourage men from it. It's fine to create activity groups related to tech that are women specific, since women may require a different motivations than men to join the field. However, supposing there is an instance where men are the minority (say there's a school where only a few boys are interested in tech versus tens of girls) it is important that the women also be inclusive of the men. We're not rivals, we're comrades, and comrades help each other.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

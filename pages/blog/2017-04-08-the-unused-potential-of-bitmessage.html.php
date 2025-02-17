@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-04-08-the-unused-potential-of-bitmessage.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>For quite some time now I've been using <a href="https://github.com/Bitmessage/PyBitmessage" target="_blank" >Bitmessage</a>, an e-mail replacement that was made to protect user privacy based on the <a href="https://bitcoin.org/" target="_blank" >Bitcoin</a> model. After using Bitmessage for quite some time I have come to see the many benefits it has compared to e-mail, namely in regards to privacy and ease-of-use.</p>
 
 <p>To begin with, Bitmessage has no e-mail service provider, you don't need to register an account with a third-party just to get a Bitmessage address, and all the information is stored on your computer. This means that it is highly accessible to anyone who has the application. This also means that information can't be stolen from a central source (eg. GMail/Yahoo/OutLook/etc. servers) but rather they would have to have direct access to the machine in which you store your messages (which is hopefully protected by disk encryption).</p>
@@ -20,3 +25,7 @@
 
 <p>If you would like to try out Bitmessage you can send a message to the address I have on my Contact page, and I will get back to you as soon as I can.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

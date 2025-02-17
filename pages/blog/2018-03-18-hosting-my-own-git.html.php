@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2018-03-18-hosting-my-own-git.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I have recently put up my own git hosting instance on the VPS at <a href="#"
 	target="_blank" >git.themusicinnoise.net</a>. Essentially, I'm getting
 tired that I have repos in 3 different places, so I finally decided to bring
@@ -19,3 +24,7 @@ them.</p>
 <p><b>UPDATE 2020/03/19:</b> I've given up on maintaining my own git server.
 Currently I'm still using GitLab, but I may end up switching to fossil as an
 alternative to git depending on how things go.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

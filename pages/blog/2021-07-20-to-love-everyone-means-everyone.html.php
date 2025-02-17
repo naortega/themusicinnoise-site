@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-07-20-to-love-everyone-means-everyone.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Currently I am on vacation back in the United States, visiting family. We
 live in Minnesota. In the city many people boast of being open, accepting,
 tolerant and loving. There are signs about love and social justice on every
@@ -49,3 +54,7 @@ correct in hopes of change. Ultimately, hatred will always exist so long as we
 are pilgrims in this world. It is not until we enter into the Beatific Vision
 that we may finally rest in peace in our Lord's Kingdom, where hatred has no
 place; as God is Love (1 John 4:8).</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

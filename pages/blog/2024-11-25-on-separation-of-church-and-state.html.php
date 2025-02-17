@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2024-11-25-on-separation-of-church-and-state.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>
 Among the liberals of our age, most especially in the American context, one can
 often hear the phrase thrown at conservatives “Separation of Church and State!”
@@ -161,3 +166,7 @@ threatens the very basis of its regime: its own divine status. So it is that
 under liberalism there is no separation of Church and State, but subjugation of
 the Church to the State.
 </p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

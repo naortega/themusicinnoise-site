@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-03-25-book-review-the-lambs-supper-by-scott-hahn.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>This is the first book review I'm doing, so don't expect very much,
 and it's on the book <i>The Lamb's Supper: The Mass as Heaven on
 Earth</i> by Dr. Scott Hahn, where Dr. Hahn explains how the <i>Book of
@@ -156,3 +161,7 @@ Mass, visualize what you've read as it happens before you in the Paschal
 Sacrifice. Despite how absolutely bland it may seem - I have this
 feeling with some <i>novus ordo</i> Masses - what is occurring before
 you is truly awesome.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

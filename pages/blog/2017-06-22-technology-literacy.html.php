@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-06-22-technology-literacy.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>It's quite annoying to hear, as it is for most techies, whenever people say that millennials are the 'technology' or 'digital' generation. Let's begin pointing out why this is wrong. When I ask a millennial to write a plain text file and they open a word processor, that's technological illiteracy; when I am told by a millennial that their internet was going slow so they upgraded their RAM, that's technological illiteracy; when a millennial doesn't understand that VLC can't play an iMovie project file (they copied the iMovie project file from a Mac computer to a Windows computer), that's complete technological stupidity. If you would like more information on why millennials are technological know-nothings you can visit <a href="http://www.coding2learn.org/blog/2013/07/29/kids-cant-use-computers/" target="_blank" >this blog post</a> which does an excellent job at explaining the issue. In reality, millennials are just as computer literate as our parents were television literate (ie. I know how to press the buttons to make it go on and off, but the day one minor thing doesn't work in exactly the same way I freak out myself and have to call in tech support).</p>
 
 <p>So, you may be asking "Why is it important that we have computer literacy in the first place?". The answer to which is quite simple: because you depend on it. When you depend on something, typically you learn enough about it so that when things go wrong you have a basic knowledge of it and aren't drooling like an idiot. Hence why in primary school we learn basic addition, subtraction, multiplication, and division (and many other things later on that are also fundamental to our ability to survive in society). If you depend on something you should at least have a <b>minimal understanding</b> of how to actually use it and how it works. The same way that when you get a car you learn the different parts of the car and how to check and make sure it's in shape, you still have to know how to check the oil and such.</p>
@@ -6,3 +11,7 @@
 
 <p>This is not something that's completely out-of-this-world, it's quite basic, and the fact that most people (especially millennials) don't know this stuff makes them extremely vulnerable to all sorts of scams and stupid decisions, and helps them to be convenienced people who can't look things up on their own before asking for help (now that I mention this, perhaps the first thing they should learn is how to use a search engine to find a solution to their problem instead of asking the closest techie). I'm not asking for everyone to turn into computer wizards, I'm asking them to at least be able to detect more or less where a problem is coming from when they get an issue and for them to attempt to solve it themselves (via searching the problem first) before coming to people like me. If all I have to do in order to solve your issue is put your error in a search engine, that's something you could've done yourself.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

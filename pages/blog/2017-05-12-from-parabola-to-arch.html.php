@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-05-12-from-parabola-to-arch.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I have recently switched from <a href="https://www.parabola.nu/" target="_blank" >Parabola</a> to <a href="https://www.archlinux.org/" target="_blank" >Arch</a>. First of all, I would like to mention that this is not because I want to use any non-free software in the Arch repos or install non-free firmware and drivers for some pieces of hardware I may have (I am still using Linux-libre on Arch), but rather for other reasons that I would like to explain.</p>
 
 <p>Firstly, the number one reason I am leaving Parabola is that the distro gets in my way too often. Mostly with its policy that anything that 'promotes non-free software' is non-free. I am an adult who knows every well what non-free software is, I can easily not install something that I see is non-free (namely for `pacaur', which would be so useful if only it were available on Parabola). This kind of blocking of any software that 'promotes non-free software' is useful for distros such as <a href="https://trisquel.info/" target="_blank" >Trisquel</a>, which are aimed at people who could hardly be described as tech-savvy, since these kinds of people do not necessarily know how to distinguish between free and non-free software (it's simply not something that's part of their daily lives). However, for experienced hackers like myself, this just gets in our way of quickly getting access to tools we want to use. It's nice when our OS doesn't constantly get in our way for these kinds of things. This is, in fact, the exact reason why I use Free Software to begin with and why I like GNU/Linux. I used to use Mac many many years ago, however I had almost no ability to make the computer do what I wanted it to, Apple products constantly worked against me and whatever I wanted to do with them, and I dislike that I am feeling this again with a GNU/Linux distro. Therefore, I would suggest that if you're an experienced hacker and get stressed when <b>your</b> OS gets in the way, don't use a <a href="https://www.gnu.org/distros/free-distros.html" target="_blank" >free distro</a>, they're aimed for newbs who are new to the idea of Free Software, not you.</p>
@@ -8,3 +13,7 @@
 
 <p>With this I say that I will most likely never return to Parabola, even if the Quarantine Policy is implemented, for the reasons I mentioned first in this post. However I would still suggest that the Parabola community start to pull itself together and stop trying to shy away from having actual protocols. Debian is one of the largest community-oriented projects that is not controlled by a corporation in the background, and they have a ton of protocols and policies. If the Parabola community wishes to efficiently handle the challenges that await them in the future, it's time for them to start organizing themselves instead of leaving things as chaotic as they are.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-10-07-less-forums-more-mailing-lists.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>A while back I did a post on e-mail and why I think it's a superior
 means of communication. A middle ground between snail mail and annoying
 instant communication. And along the same lines of my previous post on
@@ -41,3 +46,7 @@ e-mail.</p>
 </a>
 </p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

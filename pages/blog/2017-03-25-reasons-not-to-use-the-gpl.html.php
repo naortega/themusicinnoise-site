@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-03-25-reasons-not-to-use-the-gpl.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p><b>NOTE:</b> I am explicitly referring to the GNU General Public License version 2 and 3 when I say GPL, it is not referring to other licenses such as the Lesser General Public License or the Affero General Public License.</p>
 
 <p>If you are actively involved in the Free Software movement you are probably well aware of how the web is a treacherous place where non-free programs are constantly installed on your computer without permission by default. The most obvious of these is the <a href="https://www.gnu.org/philosophy/javascript-trap.html" target="_blank" >JavaScript trap</a>, however similar issues arise with, for example, plugins such as Java web applets. However, measures can be taken against these and are actively improving, such as <a href="https://www.gnu.org/software/librejs/" target="_blank" >LibreJS</a>, which stops non-free non-trivial JavaScript files from running, one can also disable JavaScript and plugins on their browser to avoid downloading the malicious content.</p>
@@ -12,3 +17,7 @@
 
 <p>The web seems to be a force actively working against the Free Software movement, and although we were happy at first, seeing that all the sources would be available to us since HTML, CSS, and JavaScript are all on the client-side and in plain text, we have seen that oppressors are finding new ways of making it harder use those. What's more, even our own applications that we write that are not intended for the web can be used against us. Therefore, in your next project, when you are thinking about using the GPL (again, version 2 or 3) please consider using the AGPL instead, as we are moving in a direction where it will be more and more needed.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2022-07-28-beginners-guide-to-prayer.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>
 Recently a good friend of mine who is taking an interest in Catholicism has
 asked me if I could write an article on how to pray. Normally this isn't the
@@ -265,3 +270,7 @@ you.
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

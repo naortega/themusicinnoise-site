@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-06-20-vegetarianism.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Vegetarianism (in its various forms) has become quite popular today, and each vegetarian has adopted this way of life for various reasons (as well as to various degrees of implementation). The reason for becoming a vegetarian is, I believe, important in analyzing and judging the moral sanctity and the effectiveness of becoming a vegetarian. Of the various reasons to become vegetarian, I'll be analyzing three: health, morality, and environment.</p>
 
 <p>In this post I will use the term vegetarianism to encompass veganism, since it is truly vegetarianism driven to its ultimate conclusion. Not all that I say may relate to a specific kind of vegetarianism, so I ask that you (the reader) interpret my reasoning and see if it applies. I do not have the time (nor the energy) to go over every different kind of vegetarianism, so I must work in general terms.</p>
@@ -12,3 +17,7 @@
 
 <p>Ultimately, I don't think vegetarianism is the solution to health, moral, or environmental problems. In some cases it's a misunderstanding of nutrition, in others a flawed sense of morality, and for some a noble (but futile) attempt to save humanity. In the end, I think that a much better philosophy to advocate (and much more realistic and with better probability to give good results) is community self-sufficiency. By relying on resources within your area for basic necessities, your community will be more sustainable: it cannot consume more than what nature can provide, plus less transport of produce across the globe and therefore using less gas, etc.; less dangerous to game population: by hunting animals in your area, your community will notice when the population is growing or shrinking and know whether you should be hunting more or less each year; and healthier: the diet will consist of plants and animals from your ecosystem, in proportions that are healthier, and it will promote exercise in order to grow/hunt the food you eat, as well as creating positive social interaction between community members while obtaining these foods.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-04-08-tradition.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In recent times it would seem that, led by the principles of the
 Enlightenment, society has decided mostly to leave behind Tradition as a
 means of obtaining Truth. With the tools of reason and empirical
@@ -72,3 +77,7 @@ regard it is much wiser to trust in the collective experience of our
 ancestors over tens of thousands of years that we have had human
 civilization.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

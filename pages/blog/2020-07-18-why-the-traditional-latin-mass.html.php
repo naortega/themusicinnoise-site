@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-07-18-why-the-traditional-latin-mass.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>The most beautiful and reverent form I have seen of practicing the
 Liturgy in the Latin Rite has without a doubt been the Traditional Latin
 Mass (a.k.a. Tridentine Mass, Gregorian Mass, or Extraordinary Form).
@@ -192,3 +197,7 @@ And remember, the Tridentine Mass
 <a href="http://www.vatican.va/content/benedict-xvi/en/motu_proprio/documents/hf_ben-xvi_motu-proprio_20070707_summorum-pontificum.html"
    target="_blank" >is a right of the faithful</a>.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

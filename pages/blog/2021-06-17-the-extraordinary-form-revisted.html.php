@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-06-17-the-extraordinary-form-revisted.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In my previous post on the Traditional Latin
 Mass<sup><a href="#r1" >[1]</a></sup> much of my intention was
 apologetic, and fueled by an indignation at seeing how this form of
@@ -90,3 +95,7 @@ Christ's Church.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

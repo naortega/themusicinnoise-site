@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-06-19-install-archarm-on-the-emmc-of-the-asus-c201.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>As I had mentioned in a previous post about ARM boards, I have
 recently acquired an ASUS C201P chromebook which I have started to use
 more on a daily basis. The advantages of this laptop is that it can be
@@ -85,3 +90,7 @@ enable.</p>
 <p>After this, if I haven't forgotten anything, it should work... I
 hope. At least it works for me.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

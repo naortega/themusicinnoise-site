@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-02-15-the-end-of-the-music-stores.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Recently I was discovering some music from Scott Stapp's solo career,
 in particular his song "Mary's Crying"<sup><a href="#r1" >[1]</a></sup>,
 and I've been searching for a place where I could purchase his music.
@@ -27,3 +32,7 @@ them. At least losing any actual meaningful choices.</p>
 <a
 	   href="https://bandcamp.com/"
 	   target="_blank" >https://bandcamp.com/</a>
+
+<?php
+require 'templates/blog-footer.php';
+?>

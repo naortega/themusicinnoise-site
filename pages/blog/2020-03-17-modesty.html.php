@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-03-17-modesty.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I'm unsure about most people, but throughout my life when I've heard the word "modesty" being used, it has typically been in reference to vestment and how much skin one is exposing. In other words, an immodest vestment would be one that emphasizes the sexual or indecent attributes of the person (typically a woman) while a modest vestment would be one that respects the sacred nature of these and attempts to pull attention away from these. And although this is most certainly a form of modesty, it is a very limited understanding of it.</p>
 
 <p>Perhaps the easiest way to think of modesty is as an act of charity. It's about making sure you're not drawing attention away from what is important. During the Holy Mass, the object of everyone's attention should be God and Christ in the Eucharist. To dress or act in a way that distracts people from this would be immodest, as you're drawing attention to yourself. You can also interpret this from a positive lens, where it would be modest to dress or act in such a way that you not only do not draw attention to yourself, but remind people of God by giving example of a reverent and respectful behaviour. Even some things that we may interpret as being modest such as wearing a veil for Holy Mass can be immodest, such as if the veil were to be colorful instead of plain, as this draws attention away from God.</p>
@@ -14,3 +19,7 @@
 
 <p>Therefore, taking a step back, it would seem that the most <i>unique</i> thing to do is precisely to be modest. While everyone continues in the rat race of trying to stand out, simply following the example of Christ and working on improving our character would seem to be the most outstanding thing we can do. Don't act in the interest of drawing attention to yourself, but act in the interest of being positively modest, and redirecting people's attention to what is truly important. This itself has much more merit and is deserving of the respect of others.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

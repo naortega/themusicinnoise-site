@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-03-06-political-puritanism.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Much of today's political discourse, regardless of faction, is
 focused on presenting one's own faction as being <i>pure</i> and
 impeccable, while presenting any other as either innocently cooperating
@@ -83,3 +88,7 @@ assaults on the dignity of Man, such that every man, woman, and child,
 from their conception until their natural death, may live a life in
 accordance to their innate human dignity, which all Men have, being made
 in the Image &amp; Likeness of God.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

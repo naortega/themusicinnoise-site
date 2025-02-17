@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-11-16-new-onion-address.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>So it would appear that the time on my previous VPS ended much
 earlier than expected, which is why my website's been down for a while.
 As such, I wasn't able to recover my files for the previous onion
@@ -11,3 +16,7 @@ onion address itself, it's not that big a deal.</p>
 	target="_blank" >
 	http://ft2bvxji6lxfttqcjz6ed3iyzdhv4gbcdl2bt7cdxguk56xsvdkqnbid.onion/
 </a></p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

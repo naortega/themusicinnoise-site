@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-09-18-how-to-split-tech-monopolies.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Recently we've begun to question the amount of power that large tech
 companies have over our lives through our data, especially as these
 companies begin to monopolize the market. Because of this, the solution
@@ -89,3 +94,7 @@ Then, convince your friends and family to use these technologies and put
 the social network effect into practice. The more people you convince to
 use these technologies, the more will join, and the less power large
 corporations will have over your data.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

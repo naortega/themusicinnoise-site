@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-12-20-elevating-our-intellectual-discussion.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I was recently having a conversation at a youth group, and one of the
 questions was on what sin we had a difficult time understanding as a sin. A few
 interesting ideas were brought up, such as suicide (due to lack of culpability
@@ -38,3 +43,7 @@ ask <em>why</em> they disagree or have difficulty with a given topic. In this
 manner, you neither go over their heads assuming they're credited philosophers,
 nor do you insult their intelligence by assuming they've never even heard the
 most basic arguments before.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

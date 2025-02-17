@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-07-31-the-honorable-sacrifice-of-ones-soul.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Almost every developed civilization has seen killing as unethical, especially when killing someone within one's own tribe. This is for the obvious reason that killing members of your own community harms your community's chances of survival since you have one less member and (in the case of fertile or young community members) harms your community's future (especially if the victim is a woman). However, there have always been times when this rule has been ignored even within the community, primarily as a way of removing undesirables who live only to cause the community harm via the death penalty.</p>
 
 <p>In the modern era we seem to have a kind of schizophrenia with regards to this issue. On the one hand we have our civil society, which teaches that all human lives are equal and no one has the right to end the life of another. The problem with this idea is that it's based on the notion of individualism: that no matter what an individual does to harm the community, no one has the right to harm said individual (even to prevent future harm to others). On the other hand, we have the military of our societies which dehumanizes the enemy, painting them as pure evil and therefore a justified kill (even though many innocents are often stuck in the cross-fire). This leans more towards authoritarian ideals where all that matters is the word of the commanding officer, and all who oppose are not human.</p>
@@ -10,3 +15,7 @@
 
 <p>With this we finally have both sacrifice and responsibility in the same basket. The person who commits a crime for the good of others will recognize that sooner or later they must pay for their crimes, but if they believe that the well-being of their loved ones is more important than the price they will have to pay for the crime, then although their actions may be wrong, they are undoubtedly honorable.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

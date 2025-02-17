@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-08-25-what-is-lacking-in-education?.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>This is a question that is asked quite a lot, and although I don't have a definitive answer, I do have a few things that I believe to be very important that are being disregarded when it comes to the education of a student. Some of them are already being implemented by some school systems (in some cases it's only at certain schools), but I am not completely sure as to whether they are actually doing what I am going to expose here and if those results can be comparable statistically with those of a normal school. Either way, here are some things that I believe need to be improved. Also, in this list are things that are both common and specific, and they are based on my experiences with the American and Spanish educational system, therefore I will divide this into common issues, Spanish issues, and American issues.</p>
 
 <h3>Common Issues</h3>
@@ -29,3 +34,7 @@
 
 <p>4. Homework Should be Less of Your Grade: I'm one of those people that believes that tests should be essentially your entire grade, or at least something like 80% of it. I've heard the argument people have put as to why homework and projects should be worth more points, and I find it stupid and flawed. Their reasoning is that not everyone is good at taking tests and therefore certain students have advantages. First of all, please show me a proper scientific study demonstrating this. The Eastern Asian countries have very test based scoring systems and they rank highest on almost all the charts! Please explain to me how this works. Besides that, the reason why I believe tests are more important is because if you cannot properly explain the why and how of something in written form then you truly do not understand it. Meanwhile, on homework and projects you can easily just copy work from somewhere else, which isn't necessarily bad if you're reading through the work and attempting to understand it, but there's no guarantee of that happening. With projects there's also the common case of the lazy one who doesn't contribute to the project and yet gets the same grade as you. Meanwhile, in a test you are in a controlled environment where the teacher can see exactly what you know. The teacher shouldn't expect you to know data, but rather he/she should be testing you on whether or not you know how to work with data that is given. I distinguish between knowledge and intelligence. Someone who is knowledgable is someone who knows many things, someone who is intelligent is someone who knows what to do with information that he/she has or is given. So someone can be knowledgable and still stupid (basically, your computer is stupid, but it's knowledgable). So stop adding so much importance to homework.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

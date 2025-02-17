@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-08-24-taize-experience-and-liturgy.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I have recently spent a week in Taizé,<sup><a href="#r1" >[1]</a></sup> an
 ecumenical Christian community in France. It's not the kind of prayer I'm used
 to, but nonetheless it was a good overall experience. I figured I may as well
@@ -355,3 +360,7 @@ foreknowledge I have now.</p>
 	</li>
 
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

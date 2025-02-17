@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-10-14-full-disk-encryption-with-grub2.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>A long time ago I figured out that <a href="https://wiki.archlinux.org/index.php/GRUB#Boot_partition" target="_blank" >GRUB2 has the capability of decrypting a LUKS encrypted partition</a> therefore allowing for the <code>`/boot'</code> partition to be encrypted, however I haven't had the time to test it out until today. After that I decided it'd be a good idea to write a blog entry on how I did it, to help others and to serve as a reference for myself next time I want to do an install.</p>
 
 <p>First, please note that I did all this while installing <a href="https://www.archlinux.org/" target="_blank" >ArchLinux</a>, but it should work just about the same for any manual installation of any distro. Also, some of the steps I explain here will be repeats of the post I did on <a href="2017-02-20-parabola-with-lvm-on-luks.php" >LVM on LUKS encryption</a> (where <code>`/boot'</code> is not encrypted so GRUB can boot the kernel).</p>
@@ -44,3 +49,7 @@ mkswap /dev/mapper/CryptGroup-swap -L swap
 <h3>Final Remarks</h3>
 <p>Please note that you will be asked for your password twice, once by GRUB (to find the kernel image to boot) and another by the Linux kernel (to boot the entire OS). If you notice that anything here is incorrect or that something should be fixed, contact me from my <a href="/pages/view/Contact/" >contact page</a> and I'll edit this post.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

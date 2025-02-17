@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-10-08-why-i-use-cc-by-nd.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>If you look at my essays in the <a href="/writings/" >writings</a> section of my website you'll notice that they're licensed under a CC-BY-ND license, which is not a free culture license. Seeing that I fully support free culture I feel the need to explain why I use NoDerivatives on my essays specifically.</p>
 
 <p>First I would like to point out that although these works are licensed as NoDerivatives, you still have the right to distribute and even to quote my essays as long as you attribute my original work properly and do not modify/manipulate the text or section of the text that you use. Therefore the only right that is lacking is the right to modify my works and distribute those modifications.</p>
@@ -6,3 +11,7 @@
 
 <p>Again, although derivatives are not permitted, there is still the ability to distribute and even commercialize my works, but not to make any derivatives based upon it.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

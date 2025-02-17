@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-05-08-the-advantages-of-e-mail.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I'm not sure if I've touched upon this subject before, but e-mail is
 perhaps my favorite means of communication, especially for in-depth
 discussions. Despite the surge in modern instant-messaging, and the
@@ -69,3 +74,7 @@ changes. With e-mail I use the
 and that never changes. They may add support for some new things, but
 overall it's always the same.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

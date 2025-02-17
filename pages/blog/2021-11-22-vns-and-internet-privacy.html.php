@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-11-22-vns-and-internet-privacy.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>As of late I've been seeing a lot of renewed interest for internet privacy,
 particularly regarding certain social media platforms. This is, of course, not
 something new. This is a struggle that's been going on for years, as you can
@@ -70,3 +75,7 @@ or Facebook) to connect to any other site than that social media site.</p>
 <ol class="refs" >
 	<li><a href="https://www.amiunique.org/fp" >AmIUnique Website</a></li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

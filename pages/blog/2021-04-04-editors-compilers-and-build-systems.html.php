@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-04-04-editors-compilers-and-build-systems.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Firstly, a very blessed Easter Sunday to all! I would've liked to
 write an Easter Sunday post, but I do not have a topic planned. Alas,
 it'll have to wait for another year.</p>
@@ -51,3 +56,7 @@ for their particular use. But I believe that being able to discriminate
 between these different components, which in an IDE are integrated into
 one single tool, is vital for proper project management and
 collaboration with others who may not want to use the same tools.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-07-05-why-i-am-a-gpl-advocate.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I am very much a GPL advocate, and the more I get into programming the more
 I favour the GPL licenses. I have many reasons for this, some of them
 applying to myself personally, but others that are applicable at a larger
@@ -67,3 +72,7 @@ building upon the shoulders of giants. With that mentality I believe we can
 get much further than what could be created with each of us going our own
 separate ways without having any knowledge of what the other has done.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-05-26-the-new-era-of-script-kiddies.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>The world of technology has little by little been taken over by the web,
 which (in my opinion) isn't necessarily a bad thing. What I don't like is
 that the main languages in the web are scripting languages that allow bad
@@ -51,3 +56,7 @@ or doesn't make sense, it doesn't fix it for me, it gives me a <b>big fat
 error in bold red text</b> that tells me "Hey, this code is bad, you
 should change that!".</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

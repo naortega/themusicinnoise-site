@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2024-02-15-religion-and-politics.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Religion &amp; politics, aside from being the two topics you are never
 supposed to discuss in polite company, are also considered by modern standards
 to be two realms that should never mix. That is to say, your religion should
@@ -88,3 +93,7 @@ some fideistic imposition of values, but because of the truth that abortion is
 murder. And therefore, just as I would argue with the vegan's worldview to
 ensure that I have access to animal product, so too would I expect a similar
 discussion to be had on the issue of abortion.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

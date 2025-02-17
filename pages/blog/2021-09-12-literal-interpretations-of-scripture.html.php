@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-09-12-literal-interpretations-of-scripture.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Some time ago, I was talking with a friend, and he brought up how a mutual
 friend of ours had suggested that it is possible that Moses, the Biblical
 character from the Old Testament, did not historically exist. Rather, that he
@@ -79,3 +84,7 @@ all that it's ultimately not that big of a deal.</p>
 		contradiction with Judaeo-Christian theology.
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

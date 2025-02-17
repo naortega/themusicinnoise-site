@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-10-27-new-site-migration.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I'm giving a head's up that my site is going to undergo a massive
 migration (relatively) soon. I'm going to be changing servers, and I
 would like to take advantage of the situation to also change the base
@@ -25,3 +30,7 @@ select few), especially since I had already done this last year. But
 hopefully this is the last time I have to do this... for maybe the next
 few years instead.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

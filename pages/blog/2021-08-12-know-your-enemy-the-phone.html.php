@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-08-12-know-your-enemy-the-phone.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>With this title, I cannot help but think of and mention Rage Against the
 Machine's hit song, "Know Your Enemy."<sup><a href="#r1" >[1]</a></sup> So I'll
 just drop that little gem.</p>
@@ -120,3 +125,7 @@ house when coming home; there's always something more you can do.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-05-25-small-talk.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In my post about the television I mentioned very briefly the issue of
 'small talk'. First, I would like to make it clear that I am not talking
 about <a href="https://en.wikipedia.org/wiki/Smalltalk" target="_blank" >SmallTalk</a>
@@ -29,3 +34,7 @@ march into uncharted waters where their opinions are at stake of being
 disproven by reason and evidence (in which case your opinions are most
 likely either wrong, incomplete, or unfounded to begin with).</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

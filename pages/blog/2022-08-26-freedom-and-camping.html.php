@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2022-08-26-freedom-and-camping.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>
 Since I was a boy I've been a fan of the outdoors, and particularly of camping.
 Perhaps one of the most influential experiences of my life was when I worked
@@ -192,3 +197,7 @@ true freedom amidst all that which attempts to enslave us.
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

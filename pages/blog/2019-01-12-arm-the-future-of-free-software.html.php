@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-01-12-arm-the-future-of-free-software.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>The ARM CPU architecture, although quite old (first introduced in 1985) has only recently started to pick up steam, currently competing in the CPU market with Intel and AMD. Its primary advantage is its low power usage and low up-front cost compared to the other two, and therefore it has a lot of potential for embedded devices. Hence why currently the primary markets where you can find ARM booming are mobile and embedded CPUs. However, the line started to blur with the introduction of the <a href="http://raspberrypi.org/" target="_blank" >Raspberry Pi</a>, where techies and classrooms began to actively develop on the Raspberry Pi's ARM CPU. It continued to expand as potential was seen to use ARM in small netbooks (more commonly referred to as Chromebooks) to achieve similar gains as had been achieved in mobile, and since mobile was already using ARM, there would be little friction in putting a mobile-like OS on a netbook and allowing users to install mobile applications. Perhaps most interestingly, ARM has started to <a href="https://www.eetimes.com/document.asp?doc_id=1330339" target="_blank" >enter the realm of supercomputing</a>, which catches the eye considering how ARM's CPU frequency hasn't been very fast up until recently.</p>
 
 <p>Of course, this is only a history as to why ARM has been booming recently, but why is it important to the free software movement? Simply put, it's because although certain parts of ARM boards may remain proprietary (especially in terms of firmware), there are ARM boards that demonstrate significant gains in freedom compared to the x86 series (Intel or AMD), especially with the <a href="https://en.wikipedia.org/wiki/I.MX" target="_blank" >i.MX series</a>, which has an embedded Vivante GPU that runs on freedom respecting drivers (a massive leap forward in terms of free software, especially for those of us used to NVidia cards where you either use the proprietary drivers or conform with a buggy reverse engineered Nouveau driver). There are also many ARM boards that have free (as in freedom) BIOS/UEFI firmware, which should be a relief from having to either flash Libreboot onto your x86 Thinkpad yourself or buy a computer directly from Minifree (and the others) at an outrageously high price. Instead, it will work freely out of the box.</p>
@@ -8,3 +13,7 @@
 
 <p>All this considered, it's not certain that ARM will lead the way in software freedom, but currently it provides much more freedom in drivers and even firmware than x86 providers do. To make things better, this freedom comes out of the box instead of through reverse engineering and buggy hacks. Also, as another pro, most non-free applications are not ported to ARM, and therefore it gives you a technical excuse not to use them instead of the "muh freedom" argument that (as most of us free software supporters have discovered) annoys our relatives and friends.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

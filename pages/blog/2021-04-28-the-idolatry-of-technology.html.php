@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-04-28-the-idolatry-of-technology.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Despite being a computer engineer (student), I am actually quite
 skeptical of technology and new technological innovations, especially
 the more complex and interdependent they become. My exposure to
@@ -67,3 +72,7 @@ soul form part of oneself.</p>
 but I do hope that it gives you, the reader, something to think about
 with regards to your relationship with technology in your life, and your
 attitude towards technology.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

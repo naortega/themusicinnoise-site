@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-09-02-why-you-should-learn-esperanto.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p><a href="https://en.wikipedia.org/wiki/Esperanto" target="_blank" >Esperanto</a> is an artificial language, created by Dr. Zamenhof in the late 19th century. Its objective: become the <i>lingua franca</i>, a language that would bridge different cultures of the world, an international second language. This is often referred to in Esperanto as the <i>fina venko</i> ("final victory"). Needless to say, Esperanto is far from achieving this goal, and probably never will. The closest we may ever see is Esperanto being implemented as a European regional language, but even this idea is far-fetched.</p>
 
 <p>So, why would anyone want to learn a language no one speaks? After all, the primary purpose of a language is communication. Well, there are several, some of which you may be surprised by.</p>
@@ -14,3 +19,7 @@
 
 <p>Ĝis la revido!</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-08-28-cmake-externalproject-module.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Recently I've started working on a C++ project that uses the CMake build
 system.<sup><a href="#r1" >[1]</a></sup> The first thing I was in charge of
 doing was fixing the build, as one of the dependencies is the SeetaFace2
@@ -51,3 +56,7 @@ which targets to build (instead of the entire project).</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

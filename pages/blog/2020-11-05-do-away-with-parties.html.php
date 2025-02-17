@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-11-05-do-away-with-parties.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In light of the most recent elections and the chaos and tension that
 accompanies it, I think it may be important to talk about the way the
 democratic system works and one of its key flaws, both in the United
@@ -127,3 +132,7 @@ compatriots who think differently from ourselves do so in hopes that it
 will be better for our country, and ultimately it is better for the
 Common Good when we are not at each other's throats.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

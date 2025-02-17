@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-07-13-the-beauty-of-the-sacrament-of-confession.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Some folks have mentioned to me before that they are amazed at my love for
 the Mass. Indeed, like for any Catholic, the Mass is a central element of my
 faith. For me, the Mass can truly be a bedrock of my daily life, holding
@@ -53,3 +58,7 @@ all your father cares about now is that you have returned to him.</p>
 <p>I truly encourage all Catholics to go to confession frequently. Not so
 frequent as to stimulate scrupulosity, but enough to humble oneself and also to
 be reminded of God's infinite mercy.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

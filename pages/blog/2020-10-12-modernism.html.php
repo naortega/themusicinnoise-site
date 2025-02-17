@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-10-12-modernism.cfg.php';
+require 'templates/blog-header.php';
+?>
 <blockquote>
 	<i>"The Catholic Church never suits the particular mood of any age,
 	because it was made for all ages. A Catholic knows that if the
@@ -90,3 +95,7 @@ reason, historical human experience, and God Himself in agreement with
 reason. As such, it is a philosophy that must be wholly rejected and
 repudiated.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

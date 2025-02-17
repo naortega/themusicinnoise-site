@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-11-12-new-website-setup.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>So the date on this post may be wrong by the time you're reading it,
 mostly because I'm not sure when I'm gonna be done setting up the
 server, but I hope it's today. However, you probably will have noticed
@@ -54,3 +59,7 @@ feed 440KB, so I don't think it's too much to download.</p>
 <p>All in all, I'm quite happy with the way things have turned out, so I
 hope I'll be able to keep this setup for... at least a few more
 years.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

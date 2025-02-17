@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-10-31-what-makes-spanish-awesome.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>If you've ever had to learn Spanish for class (especially in the US) you're probably utterly confused as to why there would be anything useful in Spanish that a language like English could adopt. Especially because you are now going over the memories of all those wretched verb conjugations, gendered nouns, adjective conjugations, etc. But I'm not going to be going over those, and instead I'm going to be focusing on two elements of Spanish that are amazing and you probably didn't learn too much about them in your classes.</p>
 
 <p>First, let's go over the inverse punctuation marks: "¡" and "¿". Have you ever had to read a text out loud in English class, you get to the end of the sentence, and you realize it was supposed to be an exclamation? Or sometimes you've read a sentence that is very ambiguous as to whether it's a statement or a question, so you start pronouncing it as a statement until you reach the end and have to re-read the sentence. This is what inverse punctuation marks are for! Something I love about Spanish is you already know these things about a sentence from the very beginning of it. What makes it even more strange is that, to my knowledge, Spanish is the only language that uses these. Even our neighbors, the Portuguese, don't use them.</p>
@@ -8,3 +13,7 @@
 
 <p>This last bit applies less to a language like Esperanto, where the tonic syllable is always the penultimate syllable, and every letter has a single pronunciation due to lack of digraphs and other linguistic anomalies. However, I still think Esperanto could benefit from adopting the inverse punctuation marks mentioned first.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-04-08-los-siete-dolores-y-gozos-de-san-jose.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p><i>Este texto lo he sacado de mi Misal Completo Latino-Español. Son
 siete meditaciones sobre la vida de San José.</i></p>
 
@@ -88,3 +93,7 @@ elegir a San José para esposo de vuestra Madre Santísima: os rogamos nos
 concedáis que, pues le veneramos como protector en la tierra, merezcamos
 tenerle como intercesor en el cielo: Vos que vivís y reináis por los
 siglos de los siglos. Amén.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

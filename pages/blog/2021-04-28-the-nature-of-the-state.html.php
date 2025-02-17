@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-04-28-the-nature-of-the-state.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>A while back when I had done a post on political parties and an
 alternative model for a Republican Democracy, I had briefly mentioned
 the importance of the <em>nature of the State</em>, in other words, the
@@ -92,3 +97,7 @@ that truly leads to human development and progress.</p>
 <ol class="refs" >
 	<li id="r1" ><a href="http://www.vatican.va/content/pius-x/en/encyclicals/documents/hf_p-x_enc_11021906_vehementer-nos.html" target="_blank" ><i>Vehementer Nos</i></a> § 3, Pope St. Pius X</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

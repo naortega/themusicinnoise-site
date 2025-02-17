@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-01-02-dumping-summer-album.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I've decided to remove the "Summer" album which I had been working on
 from my website. The audios and pages have been removed.</p>
 
@@ -26,3 +31,7 @@ give me a little more direction.</p>
 <a href="https://thejosias.com/2020/12/10/the-need-for-an-integral-approach-to-music/"
 	target="_blank" >
 	https://thejosias.com/2020/12/10/the-need-for-an-integral-approach-to-music/</a>
+
+<?php
+require 'templates/blog-footer.php';
+?>

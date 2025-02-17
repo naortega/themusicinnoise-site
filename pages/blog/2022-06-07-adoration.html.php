@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2022-06-07-adoration.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>In the Christian prayer life there is a richness of ways to pray, and
 generally we choose those devotions which help us to delve into the mysteries of
 our Faith and to deepen our relationship with God. However, even though there
@@ -82,3 +87,7 @@ praising God and how great He is. That's all there is to it.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

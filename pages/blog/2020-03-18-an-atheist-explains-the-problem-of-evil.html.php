@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-03-18-an-atheist-explains-the-problem-of-evil.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>The problem of evil is perhaps one of the most common arguments against the existence of God, and it holds much weight especially for those who have experienced some kind of hardship in their life. How can an Omnibenevolent God permit evil to exist? The faithful will typically retort with arguments of how God gave us free will, and how we live in a fallen world. These arguments are valid, but they don't get to the heart of the dilemma, which is the other person's inability to see how God can create more good from the evils he permits to exist.</p>
 
 <p>As pointed out in paragraph 311 of the <i>Catechism of the Catholic Church</i>:</p>
@@ -18,3 +23,7 @@
 
 <p>May it be according to God's will, and God bless you.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

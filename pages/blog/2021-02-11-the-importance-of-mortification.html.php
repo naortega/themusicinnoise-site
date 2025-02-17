@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-02-11-the-importance-of-mortification.cfg.php';
+require 'templates/blog-header.php';
+?>
 <blockquote>
 	"The way of perfection passes by way of the Cross. There is no
 	holiness without renunciation and spiritual battle. Spiritual
@@ -69,3 +74,7 @@ importance of Mortification as well as to choose a Mortification for
 this Lenten season.</p>
 
 <p>God bless you.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

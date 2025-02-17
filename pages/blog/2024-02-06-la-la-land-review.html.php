@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2024-02-06-la-la-land-review.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Recently I watched the 2016 film "La La Land" with my wife, and it conjured
 some interesting conversation afterwards. I therefore thought it would make for
 a good blog post to talk about the movie.</p>
@@ -163,3 +168,7 @@ musical, and even one of my favorite films. Take the lessons to heart, do not be
 carried away by where the wind blows you. Instead, set your trajectory, clarify
 your circumstances, and make your choices based on what will truly be more
 fulfilling, which is typically a lot simpler than you think.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

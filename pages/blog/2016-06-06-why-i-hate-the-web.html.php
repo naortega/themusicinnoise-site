@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-06-06-why-i-hate-the-web.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I would first like to point out a couple things before starting my rant,
 first of which is that I am talking about the web, <b>not</b> the internet. To
 simplify this distinction for the non-techies who might be reading this,
@@ -58,3 +63,7 @@ and there are still positives to the web if you know where to go to avoid
 where those places are? Get off your Facebook and Twitter and start going
 to the less popular sites where your friends most likely don't hang out.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

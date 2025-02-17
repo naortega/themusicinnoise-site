@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-02-10-be-less-internet-dependent.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Recently I was studying for an exam. Normally I do this by
 downloading the material to my computer (typically PDF documents) so I
 can have access to it locally. I could most definitely simply view it in
@@ -39,3 +44,7 @@ your life more difficult?" one may hear. This results in all kinds of
 situations where, since those in charge of choosing the method of
 communication or the technologies used for a project will often choose
 that which is most convenient.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

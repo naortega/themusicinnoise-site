@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-01-26-esperanto.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Recently I started learning Esperanto, the universal second-language. It's a constructed language made with the purpose of being used as a second-language by everyone so that everyone could talk to each other while no one country having the advantage of it being their native language. Because of this the language is very simple to learn, the grammar is extremely simple and, most of all, consistent and logical.</p>
 
 <p>After having played with it a little I already find it quite easy to formulate sentences with it, although this is mostly due to it being very similar to romance languages. However the grammatical rules still remain simple and easy to use (such as the lack of person, gender, formality (in Japanese), and number in verb conjugation, which makes conjugation very easy to memorize).</p>
@@ -6,3 +11,7 @@
 
 <p>Essentially, any movement that wishes to be international I believe should work in Esperanto as a way to maintaining neutrality and universality.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

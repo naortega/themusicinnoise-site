@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-12-09-recipe:-potato-stir-fry.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Living independently in an apartment, I've learned to make quite a few meals out of cheap ingredients and leftovers. This was a meal that I would make to get through a lot of potatoes that I'd have lying around.</p>
 
 <p>The tools you'll need are a large pot (to boil the potatoes in), and a wok or large pan.</p>
@@ -27,3 +32,7 @@
 
 <p>¡Que aproveche!</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

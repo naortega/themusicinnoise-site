@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-11-26-reverence-for-authority.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Some time ago I was at the bar with some of my friends, and the topic
 came up about signs of reverence during the Mass, in particular kneeling
 in order to receive Communion, and the importance of receiving Communion
@@ -63,3 +68,7 @@ go up to receive the Holiest of Sacraments, the Corpus Christi, if there
 is nothing impeding you, kneel to receive our Lord. Whether or not you
 receive Communion on the tongue, you can always receive Him
 kneeling.</p>
+
+<?php
+require 'templates/blog-footer.php';
+?>

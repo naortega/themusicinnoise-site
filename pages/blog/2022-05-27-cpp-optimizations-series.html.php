@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2022-05-27-cpp-optimizations-series.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>I've recently started working on a new series on my Odysee channel which aims
 to explain some very basic C/C++ code optimizations at an assembly
 level.<sup><a href="#r1" >[1]</a></sup> I explore different keywords and good
@@ -27,3 +32,7 @@ So I don't mind the format all that much.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

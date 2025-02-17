@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-08-31-installing-archarm-with-uefi-on-the-mcbin.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>So I've decided to write this little guide because of how much I've suffered
 to get this to work, and how absolutely broken the MACCHIATObin documentation
 is. Actually, just their website in general is broken. Marvell, please get your
@@ -257,3 +262,7 @@ sure to remove whatever live media you were using for the installation.</p>
 		</a>
 	</li>
 </ol>
+
+<?php
+require 'templates/blog-footer.php';
+?>

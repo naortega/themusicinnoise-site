@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2020-09-28-be-radical.cfg.php';
+require 'templates/blog-header.php';
+?>
 <blockquote>
 	"So then because thou art lukewarm, and neither cold nor hot,
 	I will spue thee out of my mouth." - Revelations 3:16
@@ -48,3 +53,7 @@ itself.</p>
 For at least he who is cold or hot may be correct, but he who is
 lukewarm will always be wrong.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2017-05-02-patch-files.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Something that really annoys me about most repository hosts nowadays is that all of them are highly dependent on using pull-requests to contribute code, when originally all VCSs had (and still have) ways to contribute via patches (that and the `patch' command) which can be sent via e-mail. Now, I understand that having these changes more accessible to the public would be useful, and mailing lists aren't always best. However, why not simply use the same infrastructure of an issue tracker and apply it to uploading patch files? They would be organized just like pull-requests are, and would essentially be the same thing as a pull-request... except directly with a patch file instead of having to go through such a long process just to contribute to a repository.</p>
 
 <p>So, why are patch files better than pull-requests? First of all, pull-requests are still useful if someone makes a real fork of a project (not what they're calling 'forks' nowadays which is someone making a copy just to modify something and then merge it back into upstream). However, if I am contributing to a project it is much easier and faster to make a patch file than to deal with web interfaces endlessly just to contribute two lines of code. When you make a patch file the process is as follows: clone the repository, make the change, create patch file, submit patch file. Easy, right? Now, let's look at this same process for pull-requests: 'fork' a repository, clone your 'fork', make changes, push changes to your 'fork', and finally create the pull request. Patch files have 4 steps, while pull-requests have 5. You may say "Well, but that's only one extra step, it's not that bad". Okay, but let's move forward.</p>
@@ -16,3 +21,7 @@
 
 <p>So please, stop promoting this cancerous disease known as "the pull-request". Patch files were perfectly fine. If you're going to write your own new repository hosting web framework or whatever, be sure to incorporate patch files. As I said before, pull-requests are good only if we're talking about <b>real forks</b>, not a 'fork' that someone made of a project to contribute 2 lines of code and then never touch it again.</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

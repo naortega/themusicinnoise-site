@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2019-07-30-recipe:-mojopicón.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>Mojopicón is a Spanish spicy sauce recipe. It goes extremely well with meats, fish, on sandwiches (including burgers and hot dogs), but is mostly used as a dip (really good with french fries). It's extremely simple to make, and quite cheap as well, although it has quite the variety of spices.</p>
 
 <p>To make mojopicón you will require a blender, preferably a hand-held blender.</p>
@@ -22,3 +27,7 @@
 
 <p>¡Que aproveche!</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

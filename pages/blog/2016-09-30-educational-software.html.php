@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2016-09-30-educational-software.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>This last week I've been taking my university classes and we've started taking practice classes as well, where we apply the theory we've learned. In my programming class it's programming in C++ (they use Code::Blocks with the MinGW compiler), which is nice (I was expecting them to be using Visual Studio, so it's a nice surprise). However, for my math class we're using Mathematica. Although I can get it for free by checking out the installation disc at the library and get a license through my student e-mail, it's still an ethical issue for an advocate of Free Software. I've been searching all over for a good alternative to Mathematica that is Free Software, and although I've found some wonderful alternatives (such as <a href="http://www.sagemath.org/" target="_blank" >SAGE</a> and <a href="http://mathics.github.io/" target="_blank" >Mathics</a>), none of them are able to view/edit Mathematica Notebook files (which is surprising considering it's plain text).</p>
 
 <p>However, the root of the problem does not lie with these alternatives for not being able to process proprietary formats, but rather with the educational facility (in this case the University of Jaen) for supporting such software and not allowing students to use a more ethical alternative (such as those mentioned previously) which have about the same capabilities. This is especially problematic since what this tells me is that they're teaching you a tool rather than the concepts behind the tool. If they were teaching the concepts behind the tool then using a different (more ethical) one would be perfectly fine as long as the concepts learned in theory are applied correctly. However, this is clearly not the case. Instead these classes are doing nothing but to make the students dependent on a specific software (and anon-free, extremely restrictive one at that) rather than something more accessible such as those alternatives mentioned before.</p>
@@ -6,3 +11,7 @@
 
 <p>In this sense, I consider it very important that students have the opportunity to use free software alternatives, and would even argue that the default software used in class should always be free software in order to help the students learn and improve (or at least give them the opportunity to do so).</p>
 
+
+<?php
+require 'templates/blog-footer.php';
+?>

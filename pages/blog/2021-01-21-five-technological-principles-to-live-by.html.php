@@ -1,3 +1,8 @@
+<?php
+require 'config.php';
+require '2021-01-21-five-technological-principles-to-live-by.cfg.php';
+require 'templates/blog-header.php';
+?>
 <p>A problem that presents itself with our use of modern technologies
 and how we develop them is how extremely inefficient it ends up being.
 Often times the technological solutions we choose to solve a given
@@ -94,3 +99,7 @@ over those that are compliant with less.</p>
 	   target="_blank" >
 	https://en.wikipedia.org/wiki/Unix_philosophy
 </a>
+
+<?php
+require 'templates/blog-footer.php';
+?>
