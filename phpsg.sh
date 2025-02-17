@@ -25,6 +25,31 @@
 SOURCE_DIR="src"
 OUTPUT_DIR="output"
 
+function print_usage() {
+	echo "$0 [-o <output dir>] [-s <source dir>]"
+}
+
+while getopts "o:s:h" opt
+do
+	case "$opt" in
+		o)
+			OUTPUT_DIR="${OPTARG}"
+			;;
+		s)
+			SOURCE_DIR="${OPTARG}"
+			;;
+		h)
+			print_usage
+			exit
+			;;
+		*)
+			>&2 echo "Unknown option '-$opt'."
+			print_usage
+			exit 1
+			;;
+	esac
+done
+
 for dir in $(find $SOURCE_DIR -mindepth 1 -type d)
 do
 	OUT_DIR="${OUTPUT_DIR}/${dir:${#SOURCE_DIR}}"
