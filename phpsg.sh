@@ -59,12 +59,9 @@ do
 	fi
 done
 
-for file in $(find $SOURCE_DIR -type f)
+for file in $(find $SOURCE_DIR -type f -not -name '*.cfg.php')
 do
-	if [[ $file = *.cfg.php ]]
-	then
-		continue
-	elif [[ $file = *.html.php ]] || [[ $file = *.xml.php ]]
+	if [[ $file = *.php ]]
 	then
 		DEST_FILE="${OUTPUT_DIR}/${file:${#SOURCE_DIR}:-4}"
 		if ! [ "$file" -nt "$DEST_FILE" ]
