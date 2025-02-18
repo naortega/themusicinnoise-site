@@ -50,16 +50,16 @@ do
 	esac
 done
 
-for dir in $(find $SOURCE_DIR -mindepth 1 -type d)
+while IFS= read -r -d '' dir
 do
 	OUT_DIR="${OUTPUT_DIR}/${dir:${#SOURCE_DIR}}"
 	if ! [ -d "$OUT_DIR" ]
 	then
 		mkdir -p "${OUTPUT_DIR}/${dir:${#SOURCE_DIR}}"
 	fi
-done
+done < <(find "$SOURCE_DIR" -mindepth 1 -type d -print0)
 
-for file in $(find $SOURCE_DIR -type f -not -name '*.cfg.php')
+while IFS= read -r -d '' file
 do
 	if [[ $file = *.php ]]
 	then
@@ -81,4 +81,4 @@ do
 		cp "$file" "$DEST_FILE"
 		echo "done"
 	fi
-done
+done < <(find "$SOURCE_DIR" -type f -not -name '*.cfg.php' -print0)
