@@ -36,10 +36,6 @@ to encrypt your e-mails following their very simple instructions.</p>
 		<li><a href="ircs://irc.libera.chat:6697/gnu" >#gnu</a></li>
 		<li><a href="ircs://irc.libera.chat:6697/gnu-offtopic" >#gnu-offtopic</a></li>
 	</ul>
-	<li>irc.oftc.net</li>
-	<ul>
-		<li><a href="ircs://irc.oftc.net:6697/debian" >#debian</a></li>
-	</ul>
 </ul>
 
 <?php
