@@ -1,7 +1,9 @@
 # The Music in Noise (Source Code)
 
 This is the source code for my personal website, [The Music in
-Noise](https://themusicinnoise.net/).
+Noise](https://themusicinnoise.net/). The website is statically generated in
+spite of being written in PHP and is compiled with a helpful little script I
+wrote, `phpsg.sh`, which compiles all the code to a static website.
 
 ## Building
 
