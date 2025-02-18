@@ -43,7 +43,6 @@ do
 			exit
 			;;
 		*)
-			>&2 echo "Unknown option '-$opt'."
 			print_usage
 			exit 1
 			;;
