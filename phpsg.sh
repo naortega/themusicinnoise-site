@@ -26,12 +26,13 @@ set -euo pipefail
 
 SOURCE_DIR="src"
 OUTPUT_DIR="output"
+JOBS=1
 
 function print_usage() {
-	echo "$0 [-o <output dir>] [-s <source dir>]"
+	echo "$0 [-o <output dir>] [-s <source dir>] [-j <num>]"
 }
 
-while getopts "o:s:h" opt
+while getopts "o:s:j:h" opt
 do
 	case "$opt" in
 		o)
@@ -39,6 +40,15 @@ do
 			;;
 		s)
 			SOURCE_DIR="${OPTARG}"
+			;;
+		j)
+			JOBS="${OPTARG}"
+			if ! [[ $JOBS =~ ^[0-9]+$ ]]
+			then
+				>&2 echo "Jobs option '$JOBS' is not an integer."
+				print_usage
+				exit 1
+			fi
 			;;
 		h)
 			print_usage
@@ -51,6 +61,10 @@ do
 	esac
 done
 
+# Make these variables visible within parallel
+export OUTPUT_DIR
+export SOURCE_DIR
+
 while IFS= read -r -d '' dir
 do
 	OUT_DIR="${OUTPUT_DIR}/${dir:${#SOURCE_DIR}}"
@@ -60,14 +74,14 @@ do
 	fi
 done < <(find "$SOURCE_DIR" -mindepth 1 -type d -print0)
 
-while IFS= read -r -d '' file
-do
+function process_file() {
+	file="$1"
 	if [[ $file = *.php ]]
 	then
 		DEST_FILE="${OUTPUT_DIR}/${file:${#SOURCE_DIR}:-4}"
 		if ! [ "$file" -nt "$DEST_FILE" ]
 		then
-			continue
+			return
 		fi
 		echo -n "Generating $DEST_FILE ... "
 		php "$file" > "$DEST_FILE"
@@ -76,10 +90,15 @@ do
 		DEST_FILE="${OUTPUT_DIR}/${file:${#SOURCE_DIR}}"
 		if ! [ "$file" -nt "$DEST_FILE" ]
 		then
-			continue
+			return
 		fi
 		echo -n "Copying target $DEST_FILE ... "
 		cp "$file" "$DEST_FILE"
 		echo "done"
 	fi
-done < <(find "$SOURCE_DIR" -type f -not -name '*.cfg.php' -print0)
+}
+# Make function usable to parallel
+export -f process_file
+
+find "$SOURCE_DIR" -type f -not -name '*.cfg.php' |
+	parallel -j"${JOBS}" process_file
