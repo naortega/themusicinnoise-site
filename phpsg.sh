@@ -22,6 +22,8 @@
 # 3. This notice may not be removed or altered from any source
 #    distribution.
 
+set -euo pipefail
+
 SOURCE_DIR="src"
 OUTPUT_DIR="output"
 
