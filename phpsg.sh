@@ -72,7 +72,7 @@ do
 	then
 		mkdir -p "$OUT_DIR"
 	fi
-done < <(find "$SOURCE_DIR" -mindepth 1 -type d -print0)
+done < <(find "$SOURCE_DIR" -type d -print0)
 
 function process_file() {
 	file="$1"
