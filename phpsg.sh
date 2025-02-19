@@ -70,7 +70,7 @@ do
 	OUT_DIR="${OUTPUT_DIR}/${dir:${#SOURCE_DIR}}"
 	if ! [ -d "$OUT_DIR" ]
 	then
-		mkdir -p "${OUTPUT_DIR}/${dir:${#SOURCE_DIR}}"
+		mkdir -p "$OUT_DIR"
 	fi
 done < <(find "$SOURCE_DIR" -mindepth 1 -type d -print0)
 
