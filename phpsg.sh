@@ -36,10 +36,10 @@ while getopts "o:s:j:h" opt
 do
 	case "$opt" in
 		o)
-			OUTPUT_DIR="${OPTARG}"
+			OUTPUT_DIR="$(echo "${OPTARG}" | sed 's:/*$::')"
 			;;
 		s)
-			SOURCE_DIR="${OPTARG}"
+			SOURCE_DIR="$(echo "${OPTARG}" | sed 's:/*$::')"
 			;;
 		j)
 			JOBS="${OPTARG}"
@@ -67,7 +67,7 @@ export SOURCE_DIR
 
 while IFS= read -r -d '' dir
 do
-	OUT_DIR="${OUTPUT_DIR}/${dir:${#SOURCE_DIR}}"
+	OUT_DIR="${OUTPUT_DIR}/${dir:((${#SOURCE_DIR} + 1))}"
 	if ! [ -d "$OUT_DIR" ]
 	then
 		mkdir -p "$OUT_DIR"
@@ -78,7 +78,7 @@ function process_file() {
 	file="$1"
 	if [[ $file = *.php ]]
 	then
-		DEST_FILE="${OUTPUT_DIR}/${file:${#SOURCE_DIR}:-4}"
+		DEST_FILE="${OUTPUT_DIR}/${file:((${#SOURCE_DIR} + 1)):-4}"
 		if ! [ "$file" -nt "$DEST_FILE" ]
 		then
 			return
@@ -87,7 +87,7 @@ function process_file() {
 		php "$file" > "$DEST_FILE"
 		echo "done"
 	else
-		DEST_FILE="${OUTPUT_DIR}/${file:${#SOURCE_DIR}}"
+		DEST_FILE="${OUTPUT_DIR}/${file:((${#SOURCE_DIR} + 1))}"
 		if ! [ "$file" -nt "$DEST_FILE" ]
 		then
 			return
