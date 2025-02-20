@@ -65,32 +65,35 @@ done
 export OUTPUT_DIR
 export SOURCE_DIR
 
-while IFS= read -r -d '' dir
-do
-	OUT_DIR="${OUTPUT_DIR}/${dir:((${#SOURCE_DIR} + 1))}"
-	if ! [ -d "$OUT_DIR" ]
-	then
-		mkdir -p "$OUT_DIR"
-	fi
-done < <(find "$SOURCE_DIR" -type d -print0)
-
 function process_file() {
-	file="$1"
+	local file="$1"
+	local DEST_FILE
+	local DEST_DIR
 	if [[ $file = *.php ]]
 	then
 		DEST_FILE="${OUTPUT_DIR}/${file:((${#SOURCE_DIR} + 1)):-4}"
+		DEST_DIR="$(dirname "$DEST_FILE")"
 		if ! [ "$file" -nt "$DEST_FILE" ]
 		then
 			return
+		fi
+		if ! [ -d "$DEST_DIR" ]
+		then
+			mkdir -p "$DEST_DIR"
 		fi
 		echo -n "Generating $DEST_FILE ... "
 		php "$file" > "$DEST_FILE"
 		echo "done"
 	else
 		DEST_FILE="${OUTPUT_DIR}/${file:((${#SOURCE_DIR} + 1))}"
+		DEST_DIR="$(dirname "$DEST_FILE")"
 		if ! [ "$file" -nt "$DEST_FILE" ]
 		then
 			return
+		fi
+		if ! [ -d "$DEST_DIR" ]
+		then
+			mkdir -p "$DEST_DIR"
 		fi
 		echo -n "Copying target $DEST_FILE ... "
 		cp "$file" "$DEST_FILE"
