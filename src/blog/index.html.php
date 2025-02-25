@@ -1,9 +1,10 @@
 <?php
+require "config.php";
+
 $title = "Blog";
 $description = "A collection of posts on miscellaneous subjects.";
 $keywords = "blog, catholicism, religion, faith, computers, programming, lifestyle, bible, scripture";
 
-require "config.php";
 require "templates/header.php";
 ?>
 <h2>Feeds</h2>

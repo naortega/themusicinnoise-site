@@ -1,7 +1,7 @@
 <?php
-$title = "Home Page";
-
 require "config.php";
+
+$title = "Home";
 require "templates/header.php";
 ?>
 <img

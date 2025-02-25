@@ -1,9 +1,10 @@
 <?php
+require "config.php";
+
 $title = "Contact";
 $description = "Directory of mediums I can be contacted by, as well as a link to my PGP key.";
 $keywords = "email, pgp, irc, contact";
 
-require "config.php";
 require "templates/header.php";
 ?>
 

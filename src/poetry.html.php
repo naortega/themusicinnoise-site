@@ -1,9 +1,10 @@
 <?php
+require "config.php";
+
 $title = "Poetry";
 $description = "A collection of some of my poems.";
 $keywords = "poetry, religion, catholicism";
 
-require "config.php";
 require "templates/header.php";
 ?>
 <p>I'm not truly super into writing poetry, or reading it for that
