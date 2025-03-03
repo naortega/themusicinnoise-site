@@ -87,6 +87,10 @@ footer {
 	border-top: 1px solid;
 }
 
+div.poem p {
+	text-align: center;
+}
+
 ol.refs {
 	padding-left: 5px;
 }
