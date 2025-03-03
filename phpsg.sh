@@ -27,12 +27,14 @@ set -euo pipefail
 SOURCE_DIR="src"
 OUTPUT_DIR="output"
 JOBS=1
+SERVER_FLAG=0
 
 function print_usage() {
 	echo "$0 [-o <output dir>] [-s <source dir>] [-j <num>]"
+	echo "$0 -S [-o <output dir>]"
 }
 
-while getopts "o:s:j:h" opt
+while getopts "o:s:j:Sh" opt
 do
 	case "$opt" in
 		o)
@@ -50,6 +52,9 @@ do
 				exit 1
 			fi
 			;;
+		S)
+			SERVER_FLAG=1
+			;;
 		h)
 			print_usage
 			exit
@@ -60,6 +65,12 @@ do
 			;;
 	esac
 done
+
+if [ $SERVER_FLAG -eq 1 ]
+then
+	php -S localhost:8080 -t "$OUTPUT_DIR"
+	exit
+fi
 
 # Make these variables visible within parallel
 export OUTPUT_DIR
