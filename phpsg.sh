@@ -34,6 +34,20 @@ function print_usage() {
 	echo "$0 -S [-o <output dir>]"
 }
 
+function print_help() {
+	printf "PHP Site Generator\n\n"
+	printf "SYNOPSIS:\n"
+	print_usage
+
+	printf "\nOPTIONS:\n"
+	printf "\t-o <output dir>     Output directory\n"
+	printf "\t-s <source dir>     Source directory\n"
+	printf "\t-j <num>            Number of jobs to run\n"
+	printf "\t-S                  Run a server on localhost:8080\n"
+	printf "\t-h                  Show help information\n"
+	printf "\n"
+}
+
 while getopts "o:s:j:Sh" opt
 do
 	case "$opt" in
@@ -56,7 +70,7 @@ do
 			SERVER_FLAG=1
 			;;
 		h)
-			print_usage
+			print_help
 			exit
 			;;
 		*)
