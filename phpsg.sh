@@ -124,8 +124,17 @@ function process_file() {
 		echo "done"
 	fi
 }
-# Make function usable to parallel
+
+function delete_file() {
+	local file="$1"
+	FILE_PATH=$(realpath --relative-base=./ "$OUTPUT_DIR/$file")
+	echo "Deleting file $FILE_PATH"
+	rm "$FILE_PATH"
+}
+
+# Make functions usable to parallel
 export -f process_file
+export -f delete_file
 
 find "$SOURCE_DIR" -type f -not -name '*.cfg.php' |
 	parallel -j"${JOBS}" process_file
@@ -133,9 +142,5 @@ find "$SOURCE_DIR" -type f -not -name '*.cfg.php' |
 SOURCE_FILE_LIST=$(cd "$SOURCE_DIR" && find . -type f -and -not -name '*.cfg.php' | sed 's/.php$//')
 OUTPUT_FILE_LIST=$(cd "$OUTPUT_DIR" && find . -type f)
 
-for file in $(echo "${SOURCE_FILE_LIST[@]}" "${OUTPUT_FILE_LIST[@]}" | tr ' ' '\n' | sort | uniq -u)
-do
-	FILE_PATH=$(realpath --relative-base=./ "$OUTPUT_DIR/$file")
-	echo "Deleting file $FILE_PATH"
-	rm "$FILE_PATH"
-done
+echo "${SOURCE_FILE_LIST[@]}" "${OUTPUT_FILE_LIST[@]}" | tr ' ' '\n' | sort | uniq -u |
+	parallel -j"${JOBS}" delete_file
