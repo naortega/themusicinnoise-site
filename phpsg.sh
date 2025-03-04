@@ -38,10 +38,10 @@ while getopts "o:s:j:Sh" opt
 do
 	case "$opt" in
 		o)
-			OUTPUT_DIR="$(echo "${OPTARG}" | sed 's:/*$::')"
+			OUTPUT_DIR="$(realpath --relative-base=./ "${OPTARG}")"
 			;;
 		s)
-			SOURCE_DIR="$(echo "${OPTARG}" | sed 's:/*$::')"
+			SOURCE_DIR="$(realpath --relative-base=./ "${OPTARG}")"
 			;;
 		j)
 			JOBS="${OPTARG}"
@@ -78,11 +78,11 @@ export SOURCE_DIR
 
 function process_file() {
 	local file="$1"
-	local DEST_FILE
+	local DEST_FILE="${OUTPUT_DIR}/${file/#${SOURCE_DIR}\//}"
 	local DEST_DIR
 	if [[ $file = *.php ]]
 	then
-		DEST_FILE="${OUTPUT_DIR}/${file:((${#SOURCE_DIR} + 1)):-4}"
+		DEST_FILE="${DEST_FILE::-4}"
 		DEST_DIR="$(dirname "$DEST_FILE")"
 		if ! [ "$file" -nt "$DEST_FILE" ]
 		then
@@ -96,7 +96,6 @@ function process_file() {
 		php "$file" > "$DEST_FILE"
 		echo "done"
 	else
-		DEST_FILE="${OUTPUT_DIR}/${file:((${#SOURCE_DIR} + 1))}"
 		DEST_DIR="$(dirname "$DEST_FILE")"
 		if ! [ "$file" -nt "$DEST_FILE" ]
 		then
