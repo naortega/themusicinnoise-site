@@ -116,3 +116,13 @@ export -f process_file
 
 find "$SOURCE_DIR" -type f -not -name '*.cfg.php' |
 	parallel -j"${JOBS}" process_file
+
+SOURCE_FILE_LIST=$(cd "$SOURCE_DIR" && find . -type f -and -not -name '*.cfg.php' | sed 's/.php$//')
+OUTPUT_FILE_LIST=$(cd "$OUTPUT_DIR" && find . -type f)
+
+for file in $(echo "${SOURCE_FILE_LIST[@]}" "${OUTPUT_FILE_LIST[@]}" | tr ' ' '\n' | sort | uniq -u)
+do
+	FILE_PATH=$(realpath --relative-base=./ "$OUTPUT_DIR/$file")
+	echo "Deleting file $FILE_PATH"
+	rm "$FILE_PATH"
+done
