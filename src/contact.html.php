@@ -39,6 +39,12 @@ to encrypt your e-mails following their very simple instructions.</p>
 	</ul>
 </ul>
 
+<h2>Matrix</h2>
+<p>Alias: @nortega:matrix.org</p>
+<ul>
+	<li>#flatpak:matrix.org</li>
+</ul>
+
 <?php
 require "templates/footer.php"
 ?>
