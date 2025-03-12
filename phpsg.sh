@@ -98,10 +98,6 @@ function process_file() {
 	then
 		DEST_FILE="${DEST_FILE::-4}"
 		DEST_DIR="$(dirname "$DEST_FILE")"
-		if ! [ "$file" -nt "$DEST_FILE" ]
-		then
-			return
-		fi
 		if ! [ -d "$DEST_DIR" ]
 		then
 			mkdir -p "$DEST_DIR"
@@ -111,10 +107,6 @@ function process_file() {
 		echo "done"
 	else
 		DEST_DIR="$(dirname "$DEST_FILE")"
-		if ! [ "$file" -nt "$DEST_FILE" ]
-		then
-			return
-		fi
 		if ! [ -d "$DEST_DIR" ]
 		then
 			mkdir -p "$DEST_DIR"
