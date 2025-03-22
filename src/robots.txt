@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: /contact.html
+Disallow: /docs
+Disallow: /imgs
