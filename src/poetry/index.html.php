@@ -16,13 +16,13 @@ expect much.</p>
 
 <ul>
 <?php
-$dir_files = scandir(dirname(__FILE__) . "/poetry/", SCANDIR_SORT_DESCENDING);
+$dir_files = scandir(dirname(__FILE__), SCANDIR_SORT_DESCENDING);
 foreach($dir_files as $file_info) {
 	if(!str_ends_with($file_info, ".cfg.php") or str_starts_with($file_info, "draft_"))
 		continue;
 
-	require dirname(__FILE__) . "/poetry/" . $file_info;
-	$post_url = "poetry/" . str_replace(".cfg.php", ".html", $file_info);
+	require dirname(__FILE__) . "/" . $file_info;
+	$post_url = str_replace(".cfg.php", "", $file_info);
 ?>
 	<li><a href="<?= $post_url ?>" ><?= $title ?></a></li>
 <?php
