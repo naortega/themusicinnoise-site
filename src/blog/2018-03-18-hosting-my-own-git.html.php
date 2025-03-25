@@ -11,7 +11,7 @@ getting rid of the need for me to navigate web UIs. Something that annoyed me
 with GitLab, Github, NotABug, and alike, is that they make use of web
 interfaces for tasks like pull requests, creating repos, issue trackers, etc.
 when most of these can be done with the same tool: a mailing list. I've already
-gone over this before in <a href="/blog/2017-05-02-patch-files.html" >my post on patch
+gone over this before in <a href="/blog/2017-05-02-patch-files" >my post on patch
 files</a>. What's more, now to create new repos I can just use a script I have
 made.</p>
 

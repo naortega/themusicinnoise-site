@@ -19,10 +19,10 @@
 		<nav>
 			<a href="/" >Home</a>
 			<a href="/blog/" >Blog</a>
-			<a href="/poetry.html" >Poetry</a>
+			<a href="/poetry" >Poetry</a>
 			<a href="https://code.ortegas.org/nortega/" >Code</a>
 			<a href="https://odysee.com/@nortega:7?r=FnizT7ACmJrTdw6HQJxAVGgFcHGN6oFy&sunset=lbrytv" >Videos</a>
-			<a href="/contact.html" >Contact</a>
+			<a href="/contact" >Contact</a>
 		</nav>
 		<main>
 			<h1><?= $title ?></h1>

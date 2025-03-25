@@ -52,7 +52,7 @@ needed a place to rant about something stupid.</p>
 
 <ol class="refs" >
 	<li id="r1" >
-		<a href="/blog/2019-07-26-the-cancer-which-is-pre-installed-applications.html" >
+		<a href="/blog/2019-07-26-the-cancer-which-is-pre-installed-applications" >
 			"The Cancer which is Pre-Installed Applications" on The Music in
 			Noise Blog
 		</a>

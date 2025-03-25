@@ -265,7 +265,7 @@ you.
 
 <ol class="refs" >
 	<li id="r1" >
-		<a href="/blog/2022-06-07-adoration.html" >
+		<a href="/blog/2022-06-07-adoration" >
 			"Adoration" on The Music in Noise
 		</a>
 	</li>

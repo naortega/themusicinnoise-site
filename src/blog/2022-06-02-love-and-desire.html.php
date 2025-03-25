@@ -48,7 +48,7 @@ themselves furthest from God, that by His grace they may be lead to Him.</p>
 <h2>References</h2>
 <ol class="refs" >
 	<li id="r1" >
-		<a href="https://themusicinnoise.net/blog/2020-12-12-what-is-love.html" >
+		<a href="https://themusicinnoise.net/blog/2020-12-12-what-is-love" >
 			"What is Love?" on The Music in Noise
 		</a>
 	</li>

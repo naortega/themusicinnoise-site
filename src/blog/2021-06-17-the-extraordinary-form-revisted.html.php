@@ -90,7 +90,7 @@ Christ's Church.</p>
 
 <ol class="refs" >
 	<li id="r1" >
-		<a href="2020-07-18-why-the-traditional-latin-mass.html" >
+		<a href="2020-07-18-why-the-traditional-latin-mass" >
 			"Why the Traditional Latin Mass" Blog Post
 		</a>
 	</li>

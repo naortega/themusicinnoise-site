@@ -19,7 +19,7 @@ foreach($dir_files as $file_info) {
 		continue;
 
 	require dirname(__FILE__) . "/" . $file_info;
-	$post_url = str_replace(".cfg.php", ".html", $file_info);
+	$post_url = str_replace(".cfg.php", "", $file_info);
 ?>
 	<li><time><?= $created ?></time> - <a href="<?= $post_url ?>" ><?= $title ?></a></li>
 <?php

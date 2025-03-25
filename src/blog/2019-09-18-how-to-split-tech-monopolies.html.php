@@ -86,7 +86,7 @@ merry way abusing people's data. But there's still something you can do
 about this. If you are truly worried about how your data is being used
 by these massive companies, look into decentralized alternatives. I have
 mentioned a few on the <a
-href="https://themusicinnoise.net/decentralized.html"
+href="https://themusicinnoise.net/decentralized"
 >Decentralized page</a> of my website, but you can find a much more
 complete list on <a href="https://prism-break.org/en/" target="_blank"
 >Prism-Break</a> (although not all are decentralized... but most are).
