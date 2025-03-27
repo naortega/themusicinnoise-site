@@ -53,10 +53,62 @@ The fact of the matter is that LLMs may seem, from a purely superficial
 standpoint, like a child who is slowly learning to speak. In the past few years
 we have seen drastic improvements as many of the tell-tale signs have been
 smoothed out of the algorithms. But even as they become indistinguishable from
-the product of actual human work, 
+the product of actual human work, that does not mean that the means of arriving
+at that product are the same, and thus the value of the product itself is not
+the same. So we must ask ourselves: how <em>do</em> these LLMs work?
 </p>
 
-<h2>The Man Who "Learned" Chinese</h2>
+<h2>The Man Who “Learned” Chinese</h2>
+
+<p>
+It is not hard to find explanations on the Web that explain in a very technical
+manner how these LLMs work, but for most people these explanations are as good
+as a neuroscientist explaining how the brain works (which, at least for me,
+would be pretty useless). Luckily, it is not necessary to know how all the
+gears in an analog watch are interconnected versus the circuits in a digital
+watch in order to understand the principle of an analog watch's movement is
+kinetic energy and components pushing one another, whereas with the digital
+watch it is electrical signals passed through logical circuit components. The
+specifics do not really matter for these purposes. Therefore, for LLMs, I would
+like to offer an explanation of this principle through analogy which may be
+easier for people to understand.
+</p>
+
+<p>
+Imagine there is a man who is a monolingual English speaker. Furthermore, he
+has no knowledge of grammatical concepts which would allow him to think
+abstractly about his language, much less any foreign language. Now let us say
+you gave this man hundreds, maybe thousands, or maybe even millions of years to
+look over Chinese texts. Some of them are books, fiction or non-fiction, some
+are articles, some are conversations, others are instruction manuals, etc. All
+sorts of texts of practically any kind. After such a long time he begins to
+notice some patterns, where normally certain symbols are followed by certain
+other symbols. And after all this time you begin to train him: you give him a
+text in Chinese and he has to try to return the proper pattern of symbols which
+ought to follow the ones you gave him. You, the one who knows Chinese, judge
+whether the response makes sense, and if so you give him positive feedback
+which tells him he did a good job (and will likely return similar responses for
+similar prompts), and if not you give him negative feedback which tells him he
+did a bad job (and will be less likely to return similar responses for similar
+prompts). After all this time, you finally have trained this man to the point
+where if any Chinese person were to speak with him over text prompts he could
+respond as if he spoke perfect Chinese and was truly having a conversation or
+writing meaningful texts. But is he?
+</p>
+
+<p>
+If you were to actually ask this man (in English) whether he had any idea what
+he was saying, he would obviously reply with a flat “Of course not,” but if you
+were to ask him in Chinese I do not think any of us would doubt that he would
+simply reply that he does, even though he clearly does not. The man has not
+actually learned Chinese, but rather to mimic Chinese. The reason for this is
+that he is not capable of doing the very thing that language is meant to do:
+convey <em>meaning</em>. Sure, a Chinese speaker may find meaning in the texts
+he writes, but that meaning is not his meaning. This language is no longer one
+rational agent communicating his ideas to another rational agent, but merely a
+single rational agent trying to induce a meaning into a text that wasn't
+infused with meaning to begin with.
+</p>
 
 <h2>Here be Demons</h2>
 
