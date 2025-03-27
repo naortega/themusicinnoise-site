@@ -33,7 +33,7 @@ income and the Gini Coefficient.</p>
 
 <figure>
 	<img
-		src="https://media.themusicinnoise.net/imgs/blog/income-inequality-vs-median-income.png"
+		src="/imgs/blog/income-inequality-vs-median-income.png"
 		title="Income Inequality vs. Median Income"
 		alt="Income Inequality vs. Median Income Graph" />
 	<figcaption>
