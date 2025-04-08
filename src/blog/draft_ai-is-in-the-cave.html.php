@@ -110,7 +110,37 @@ single rational agent trying to induce a meaning into a text that wasn't
 infused with meaning to begin with.
 </p>
 
-<h2>Here be Demons</h2>
+<p>
+It is from this understanding that some of the various flaws of LLMs begin to
+make sense. For example, the reason why they cannot accurately cite sources is
+because, firstly, they do not know what a source even is, but secondly, because
+it is simply looking back into its data and checking what usually follows
+within that context with the parameters of “citing the source,” which is why it
+so often simply makes them up. The truth is that its source is <em>all</em> its
+data mashed together probabilistically based on the input prompt and the
+context of the overall “conversation.”
+</p>
+
+<p>
+Getting back, however, to a question raised earlier about the level of
+consciousness of these LLMs, although in the analogy given above the man surely
+has a rational soul and a human intellect, it is also evident how it is not
+necessary to make use of these higher faculties in order to do what these
+machines can do: it is merely pattern recognition and probabilistic
+computation. This is something that even the beasts could do if sufficiently
+trained (think of the example of a parrot). The machine has no concept of the
+<em>meaning</em> symbolized by these words; in fact, it does not see them as
+symbols at all, but tokens with numerical values. And if it cannot comprehend
+meaning, then it certainly cannot reason on the basis of meaning. What is more,
+this is not simply a question of needing more training or more data, it is a
+matter of the process itself; for no matter how much you train the man in the
+analogy with more data and better pattern recognition techniques, he never will
+have actually learned Chinese until he starts to associate meaning those
+symbols and is thus able to reason a response instead of merely guessing what
+tokens go next.
+</p>
+
+<h2>Here Be Demons</h2>
 
 <h2>Hammers Are for Nails</h2>
 
