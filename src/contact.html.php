@@ -42,7 +42,7 @@ to encrypt your e-mails following their very simple instructions.</p>
 <h2>Matrix</h2>
 <p>Alias: @nortega:matrix.org</p>
 <ul>
-	<li>#flatpak:matrix.org</li>
+	<li>#debian:matrix.debian.social</li>
 </ul>
 
 <?php
