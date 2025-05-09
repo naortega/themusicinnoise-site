@@ -12,7 +12,7 @@ require 'config.php';
 <?php
 $dir_files = scandir(dirname(__FILE__), SCANDIR_SORT_DESCENDING);
 foreach($dir_files as $file_info) {
-	if(!str_ends_with($file_info, ".cfg.php"))
+	if(!str_ends_with($file_info, ".cfg.php") or str_starts_with($file_info, "draft_"))
 		continue;
 
 	require dirname(__FILE__) . "/" . $file_info;
