@@ -3,6 +3,7 @@ require 'config.php';
 require 'draft_ai-is-in-the-cave.cfg.php';
 require 'templates/blog-header.php';
 ?>
+
 <p>
 For your average technological layman most digital technologies seem to pretty
 much be magic. Somehow a bunch of ones and zeros can be transformed into a movie
@@ -140,9 +141,49 @@ symbols and is thus able to reason a response instead of merely guessing what
 tokens go next.
 </p>
 
-<h2>Here Be Demons</h2>
-
 <h2>Hammers Are for Nails</h2>
+
+<p>
+One aspect of LLMs which is often demanded but seldom actually considered are
+the ethical considerations, and there is a sense in which you cannot blame
+people for evading the question, as our ethical framework has become quite
+impoverished over the last few centuries. In the secularist world we could
+probably say that the predominant ethical framework is either utilitarian (of
+some sort) or emotivist. As such much of the discussion around the ethics of LLM
+usage revolve around the consequences and the effects, rather than the classical
+approach traditionally taken by the West which focuses on what a thing is and
+what it is for. Even among some Catholic celebrities, due to this prevailing
+ethical framework, the thought process tends to get stifled at the consequences
+of LLMs, wherefore the only limitations or considerations placed on the use of
+LLMs becomes a simple “don't do bad stuff with it.” But this is not serious. If
+we're going to treat this new revolutionary technology seriously we must
+consider what it <em>is</em> and what it is <em>for</em>.
+</p>
+
+<p>
+For this I must refer to a video made by New Polity titled “Should Christians
+Use ChatGPT?”<sup><a href="r2">[2]</a></sup> which is the only resource I have
+found as of yet which actually addresses the issue of the nature of LLMs &ndash;
+thought to be fair, I haven't done a lot of research on my own and I was already
+subscribed to them. I don't wish to go through the entire syllogism here,
+because that's what they made the video for, as well as their blog article “AI
+Chatbots Are Evil”<sup><a href="r3">[3]</a></sup> (which probably spoils some of
+the answer from the title), but I do wish to briefly summarize the concluding
+statements taking for granted that we all accept basic virtue ethics. In short,
+we first start not with the LLMs and the chatbots, but with human conversation
+and its purpose, and note that, as mentioned in the article:
+</p>
+
+<blockquote>
+“Conversation is for <em>communion</em>. The ability to speak and to listen, to
+discuss, to reveal our hidden, intellectual life by articulating ourselves in a
+public, common language with the hope of receiving a response&ndash;all this has
+as its natural correlate in another intelligence, one who receives our meaning,
+understands it (or misunderstands it), and has the power to respond in kind,
+revealing the hidden reality of his or her own subjectivity.”
+</blockquote>
+
+<h2>Here Be Demons</h2>
 
 <h2>Resources</h2>
 <h3>Notes</h3>
@@ -162,7 +203,10 @@ tokens go next.
 <h3>References</h3>
 <ol class="refs" >
 	<li id="r1" ><a href="https://arstechnica.com/ai/2025/03/anthropics-ceo-wonders-if-future-ai-should-have-option-to-quit-unpleasant-tasks/" target="_blank" >Anthropic CEO floats idea of giving AI a “quit job” button, sparking skepticism - Ars Technica</a></li>
+	<li id="r2" ><a href="https://www.youtube.com/watch?v=YuNJchmnMzI" target="_blank" >Should Christians Use ChatGPT? - YouTube</a></li>
+	<li id="r3" ><a href="https://newpolity.com/blog/ai-chatbots" target="_blank" >AI Chatbots Are Evil — NEWPOLITY</a></li>
 </ol>
+
 <?php
 require 'templates/blog-footer.php';
 ?>
