@@ -162,12 +162,12 @@ consider what it <em>is</em> and what it is <em>for</em>.
 
 <p>
 For this I must refer to a video made by New Polity titled “Should Christians
-Use ChatGPT?”<sup><a href="r2">[2]</a></sup> which is the only resource I have
+Use ChatGPT?”<sup><a href="#r2">[2]</a></sup> which is the only resource I have
 found as of yet which actually addresses the issue of the nature of LLMs &ndash;
 thought to be fair, I haven't done a lot of research on my own and I was already
 subscribed to them. I don't wish to go through the entire syllogism here,
 because that's what they made the video for, as well as their blog article “AI
-Chatbots Are Evil”<sup><a href="r3">[3]</a></sup> (which probably spoils some of
+Chatbots Are Evil”<sup><a href="#r3">[3]</a></sup> (which probably spoils some of
 the answer from the title), but I do wish to briefly summarize the concluding
 statements taking for granted that we all accept basic virtue ethics. In short,
 we first start not with the LLMs and the chatbots, but with human conversation
@@ -182,6 +182,86 @@ as its natural correlate in another intelligence, one who receives our meaning,
 understands it (or misunderstands it), and has the power to respond in kind,
 revealing the hidden reality of his or her own subjectivity.”
 </blockquote>
+
+<p>
+If conversation is for communion with another intelligence, and LLMs solicit
+conversation by how they're programmed, yet LLMs &ndash; deceptively called AI
+for marketing purposes &ndash; are not actually intelligent, then to converse
+with a LLM chatbot will necessarily always frustrate the act of conversation. To
+frustrate an act from achieving its end is immoral, therefore LLM chatbots are
+an immoral technology, and to converse with one is likewise an immoral act.
+</p>
+
+<p>
+This is a brief summary of the argument put forward by Marc Barnes of New
+Polity. For a fuller treatise on the matter either watch the
+video<sup><a href="#r2" >[2]</a></sup> or read the
+article.<sup><a href="#r3" >[3]</a></sup> For my purposes, however, I'd like to
+clarify a couple of things which I think need to be pointed out regarding this
+conclusion. First is to point out that claiming a technology is immoral by its
+nature is not something new or special to LLM chatbots (at least for Catholics);
+and second is to clearly delineate the limits of this argument, as it is very
+possible that one may wrongly assume this is an argument against all use of
+LLMs.
+</p>
+
+<p>
+Regarding the claim that the LLM chatbots are immoral by nature is not something
+new, I think that I can give two examples which should be compelling: the first
+mostly to Catholics and the second (though not explicitly condemned by the
+Church) hopefully to a broader audience. The first technology which should come
+to the mind of every Catholic in this regard is contraceptive technologies. The
+argument by which the Church justifies such a condemnation is exactly the same
+as the one used here against LLM chatbots: that it frustrates the natural end of
+a human action (in the case of LLM chatbots, conversation; in the case of
+contraception, procreation). Sure, one could technically do as Trent Horn has
+advocated in some videos<sup><a href="n3" >(3)</a></sup> and purposely sabotage
+a contraceptive you will use in order to attain some other end (he gives the
+example of acquiring seed from the marital act to use for artificial
+insemination), but I think we'd all recognize that this is not truly a use but a
+misuse of the technology: it's not what it was made for &ndash; hence the need
+to intentionally sabotage it. The technology itself is evil because its natural
+purpose is evil and unnatural. Similarly we can also give the example of a
+nuclear bomb. The purpose for which this technology was made was to
+indiscriminately destroy and kill at a massive scale, necessarily killing
+millions of innocent civilians in the process &ndash; something which I hope
+doesn't have to be explained why it is extremely immoral. Again, surely you
+could instead use a nuclear bomb to destroy or deflect a giant asteroid headed
+to Earth, but this is not what the technology was made for. Similarly with the
+LLM chatbots you could limit yourself to only giving it commands, as opposed to
+conversation (just as we've done up until now with technologies such as
+<i>Siri</i> or <i>Alexa</i>), but this is clearly not what the LLM chatbots are
+meant for. Would it be licit to use these chatbots in this way? Probably, but it
+would end up being forced and unnatural to the technology itself.
+</p>
+
+<p>
+It's worth noting that this claim is not as general and extensive as one may
+think. You'll notice that in the past few paragraphs I've been distinguishing
+between LLMs simply and LLM chatbots. This is an important distinction because
+the underlying LLM technology is actually not necessarily meant for conversation
+and has much broader uses. Remember, the actual LLM technology isn't even
+related to language at all (even though it's in the name), but rather it's about
+predicting based on prior tokens what the next token is likely to be. As such
+the argument doesn't touch upon things such as how LLMs are used for
+autocompletion of the next few words when you write your e-mails, or of the next
+few lines of redundant code if you're a programmer &ndash; though there are
+legal concerns over violation of intellectual property rights. It also doesn't
+apply to cases such as archaeologists who have used LLMs to “fill in missing
+words from ancient Roman inscriptions carved on monuments and everyday objects,
+as well as dating and placing them geographically,”<sup><a href="#r4" >[4]</a></sup>
+nor cases such as the Alphafold tool which has been used to predict with amazing
+accuracy the 3D structure of proteins,<sup><a href="#r5" >[5]</a></sup>
+something which would have taken lots of expensive and tedious manual labor to
+do in a laboratory before. Of course, all of these should be (and generally are)
+verified by a human being who is an expert in the field in question, but we can
+see how these implementations differ from those proposed for the chatbots: the
+chatbots seek to completely replace the human element in something which is
+meant for human interaction, these implementations seek to improve the
+performance of human activity and automate certain redundant and tedious tasks,
+but the human being remains vital. In other words, these implementations
+actually use the LLM as a tool which assists man in his endeavors.
+</p>
 
 <h2>Here Be Demons</h2>
 
@@ -199,12 +279,19 @@ revealing the hidden reality of his or her own subjectivity.”
 		Singularity in this context is understood as a point-of-no-return past
 		which the advances of technological complexity are beyond our control.
 	</li>
+	<li id="n3" >
+		I cannot find the video in particular. It may have been his episode
+		<a href="https://soundcloud.com/trenthornpodcast/whats-okay-for-married-couples-to-do-sexually" target="_blank" >“What's Okay for Married Couples to Do (Sexually)?,”</a>
+		but I can't be certain.
+	</li>
 </ol>
 <h3>References</h3>
 <ol class="refs" >
 	<li id="r1" ><a href="https://arstechnica.com/ai/2025/03/anthropics-ceo-wonders-if-future-ai-should-have-option-to-quit-unpleasant-tasks/" target="_blank" >Anthropic CEO floats idea of giving AI a “quit job” button, sparking skepticism - Ars Technica</a></li>
 	<li id="r2" ><a href="https://www.youtube.com/watch?v=YuNJchmnMzI" target="_blank" >Should Christians Use ChatGPT? - YouTube</a></li>
 	<li id="r3" ><a href="https://newpolity.com/blog/ai-chatbots" target="_blank" >AI Chatbots Are Evil — NEWPOLITY</a></li>
+	<li id="r4" ><a href="https://www.bbc.com/news/articles/c04dwqr5lkvo" target="_blank" >Gaps in what we know about ancient Romans could be filled by AI - BBC</a></li>
+	<li id="r5" ><a href="https://alphafold.com/" target="_blank" >AlphaFold Protein Structure Database</a></li>
 </ol>
 
 <?php
