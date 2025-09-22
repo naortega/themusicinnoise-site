@@ -291,30 +291,48 @@ that is not to say the demonic cannot influence a computer and a computer
 algorithm, particularly one that, as already stated above, is made for an evil
 purpose&mdash;to solicit conversation from intelligent beings in spite of not
 being intelligent itself and thus not being able to actually hold a
-conversation. This is made by an even more probable by the fact that these LLM
+conversation. This is made even more probable by the fact that these LLM
 chatbots are being turned into literal idols to which people entrust their
 livelihoods. This is not an exaggeration; an increasing number of people are
 beginning to use these chatbots as a means of therapy<sup><a href="#r7" >[7]</a></sup>
 or making other important decisions in their lives. What's more, arguably
-because of the somewhat mystical omniscience attributed often to these LLM
-chatbots, people will often put more faith in the answer given by the chatbot
-than a human being or their own personal research&mdash;we've all had the
-experience of having a conversation with someone and when a dispute arises they
-take out their phone ask the chatbot and trust its judgment as if it were final.
-This turns these chatbots into idols, not just in the very loose sense we're
-used to hearing from our priests and catechists where it's idolatry for me to
-like my game console too much (an example I've heard used quite a bit for some
-reason), but in the very real sense that as a society we are assigning divine
-attributes (sometimes implicitly, sometimes explicitly) to, not just a creature,
-but a creature of our own making: just as the ancient heathens would assign
-divine attributes to the statues they would make of matter that in some way
-resembled a human being or another creature.
+because of the somewhat mystical omniscience and objectivity attributed often
+to these LLM chatbots, people will put more faith in the answer given by the
+chatbot than a human being or their own personal research&mdash;we've all had
+the experience of having a conversation with someone and when a dispute arises
+they take out their phone ask the chatbot and trust its judgment as if it were
+final. This turns these chatbots into idols, not just in the very loose sense
+we're used to hearing from our priests and catechists where it's idolatry for
+me to like my game console too much (an example I've heard used quite a bit for
+some reason), but in the very real sense that as a society we are assigning
+divine attributes (sometimes implicitly, sometimes explicitly) to, not just a
+creature, but a creature of our own making: just as the ancient heathens would
+assign divine attributes to the statues they would make of matter that in some
+way resembled a human being or another creature.
 </p>
 
 <p>
 When this sort of idolatry happens&mdash;already a sin against the First
 Commandment&mdash;it is no surprise that just as with the idols of old, demons
-can also use the new idols to manipulate men to stray from God.
+can also use the new idols to manipulate men to stray from God. For demons like
+to make use of the creatures we replace God with in order to mislead us. By
+placing so much faith in these idols we make ourselves vulnerable to
+misdirection by an algorithm that has no sense of the significance of the words
+it is saying. It is akin to the reading of tea leaves or astrology. You are
+extracting meaning from something that has none. You seek wisdom from something
+that cannot think. You seek consolation from something that cannot empathize.
+You seek love from something that, for lack of a will, is entirely indifferent
+to your existence or fate. It is truly replacing God, the <i>Summum Bonum</i>
+with a shell which doesn't even deserve to be called a shadow compared to that
+being who is the only one who can truly fulfill our deepest desire.
+</p>
+
+<h2>In the World, Not of the World</h2>
+
+<p>
+The question thus becomes, what do we do now? Even though I've limited my
+criticism (which honestly is mostly sourced from New Polity) to the chatbots,
+it is true that this seems to be the most common use
 </p>
 
 <h2>Resources</h2>
