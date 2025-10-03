@@ -153,6 +153,13 @@ img.album-cover {
 	padding: 1px 10px;
 }
 
+img.cert-badge {
+	width: 15%;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
 /* SPECIFIC */
 img#profile {
 	width: 200px;

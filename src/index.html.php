@@ -4,6 +4,8 @@ require "config.php";
 $title = "Home";
 require "templates/header.php";
 ?>
+
+<h2>About Me</h2>
 <img
 		src="/imgs/profile.png"
 		alt="Profile picture."
@@ -41,6 +43,11 @@ then I'm glad you stopped by.
 <p>
 Happy hacking, and God bless you!
 </p>
+
+<h2>Certifications</h2>
+<a href="https://verify.openedg.org/?id=w31M.bHvQ.enV4" target="_blank" >
+	<img src="/imgs/cpa-cert.png" alt="CPA Certificate Badge" class="cert-badge" />
+</a>
 
 <?php
 require "templates/footer.php"
