@@ -332,8 +332,43 @@ being who is the only one who can truly fulfill our deepest desire.
 <p>
 The question thus becomes, what do we do now? Even though I've limited my
 criticism (which honestly is mostly sourced from New Polity) to the chatbots,
-it is true that this seems to be the most common use
+it is true that this seems to be the most common use of LLMs for the common
+man, or at least the most obvious. It would seem to be almost ubiquitous at this
+point, with everyone around us using it and some Christians even promoting it.
+Even so, I think we ought to live by our convictions and what is right and avoid
+the use of chatbots (and especially their development).
 </p>
+
+<p>
+I would, however, like to speak directly to my Catholic brothers &amp; sisters
+who I think suffer from an acute sense of Fear-Of-Missing-Out (a.k.a. FOMO).
+Ever since the Protestants beat us to the mass adoption of the printing
+press&mdash;and since we've recognized that as a mistake&mdash;Catholics have
+been afraid of falling behind technologically. This combined with the overall
+worldly technophilia has lead to many Catholics jumping head-first into whatever
+new technology there is without any real discernment about the technology itself
+and whether it is truly the most appropriate means for the desired end. As a
+result, when it comes to LLM chatbots, Catholics have been quick to implement
+them in spite of the obvious limitations. This is most obvious with something
+like “Justin, the Catholic Answers Virtual Apologist,” which, as demonstrated by
+the famous Atheist, Alex O'Connor, can easily be made to give nonsensical
+responses without much depth on very basic issues (e.g. slavery in the Old
+Testament) as well as contradicting itself.<sup><a href="#r8" >[8]</a></sup> All
+the while someone could simply look up an answer in a search engine and find
+many actually coherent responses from real people who are actually able to think
+about the responses they are giving.<sup><a href="#r9" >[9]</a></sup> Now
+certainly, some Catholics may not be able to give satisfactory answers to these
+questions either, but most Catholics aren't professional (or even amateur)
+apologists. These LLM chatbots, on the other hand, are explicitly marketing
+themselves as such, and so cause scandal when they fail to give adequate answers
+with the additional fault that no one can actually take responsibility for the
+faulty response since it was probabilistically generated. At least if a Catholic
+apologist says something scandalous then he takes responsibility for his
+blunder, but there is no way for a chatbot to take responsibility; it's not
+capable of doing such&mdash;it has no agency.
+</p>
+
+<!-- if forced to use the chatbot -->
 
 <h2>Resources</h2>
 <h3>Notes</h3>
@@ -364,6 +399,8 @@ it is true that this seems to be the most common use
 	<li id="r5" ><a href="https://alphafold.com/" target="_blank" >AlphaFold Protein Structure Database</a></li>
 	<li id="r6" ><a href="https://blog.n8n.io/open-source-llm/" >The 11 best open-source LLMs for 2025 – n8n Blog</a></li>
 	<li id="r7" ><a href="https://health.usnews.com/wellness/mind/articles/should-you-use-artificial-intelligence-ai-as-your-therapist" target="_blank" >Should You Use AI as Your Therapist? |U.S. News</a></li>
+	<li id="r8" ><a href="https://www.youtube.com/watch?v=jUC9uMHAWLs" target="_blank" >An Atheist Debates a Catholic AI Apologist - YouTube</a></li>
+	<li id="r9" ><a href="https://lmddgtfy.net/?q=Why%20does%20God%20allow%20slavery%20in%20the%20Old%20Testament%3F" target="_blank" >Let Me DuckDuckGo That For You - LMDDGTFY</a></li>
 </ol>
 
 <?php
